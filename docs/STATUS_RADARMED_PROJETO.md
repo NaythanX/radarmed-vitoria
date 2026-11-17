@@ -1,6 +1,6 @@
 # RadarMed — Quadro central de pesquisa e publicação
 
-**Atualizado:** 2026-11-17. Este é o quadro de handoff entre as conversas de um projeto ChatGPT e a automação semanal. Não é fonte de edital: confirme no órgão/banca.
+**Atualizado:** 2026-11-17 (revisão com plugin PCI). Este é o quadro de handoff entre as conversas de um projeto ChatGPT e a automação semanal. Não é fonte de edital: confirme no órgão/banca.
 
 ## Fontes de verdade
 - Base pública: [dados.json](../dados.json) (branch main) e [site RadarMed](https://radarmed-vitoria.onrender.com).
@@ -13,7 +13,7 @@
 | Eixo | Estado em 17/11/2026 | Próximo trabalho |
 |---|---|---|
 | Cobertura PR/SC/SP | **Parcial**, não exaustiva | Cruzar múltiplas buscas PCI, bancas e municípios |
-| Registros em dados.json | 14 linhas após Navegantes e Pouso Redondo; consultar valor atual antes de repetir | Recontar **editais** e **cargos/jornadas**, separadamente |
+| Registros em dados.json | **26 cargos/jornadas** na revisão atual; conferir SHA e contagem antes de alterar | Recontar **editais** e **cargos/jornadas**, separadamente |
 | Falsos positivos PCI | Ocorrência de Médico Veterinário nas buscas por “médico” | Triagem profissional e exigência de RQE |
 | Navegantes (SC) | 4 cargos/jornadas registrados com fonte FURB | Monitorar retificações e prazo 25/11/2026 |
 | Pouso Redondo (SC) | Médico registrado após validação inicial SC Treinamentos | Monitorar retificações e prazo 26/11/2026 |
@@ -38,6 +38,7 @@
 | Data/hora Brasília | Etapa | Concurso ou lote | Descobertos | Confirmados | Publicados | Pendentes | Fonte/commit/observação |
 |---|---|---|---:|---:|---:|---:|---|
 | 17/11/2026 | Auditoria inicial | SC e revisão parcial PR/SP | — | 5 registros de cargo/jornada | 5 | vários | Navegantes (4), Pouso Redondo (1); cobertura ainda parcial |
+| 17/11/2026 | Integração PCI | PR/SC/SP, busca cargo médico | 53 editais PCI únicos | 12 novos registros de cargo/jornada com fonte oficial | 12 | 9 leads médicos gerais na fila PCI | 26 registros no total; candidatos_pci.json contém filas separadas por situação. Fonte PCI não é comprovação de elegibilidade nem leitura do edital. |
 
 ## Regras do registro
 1. O estado deste documento é **uma síntese**, não substitui ler edital ou `dados.json`.
@@ -46,3 +47,11 @@
 4. Usar data/hora, editais distintos, cargos/jornadas e links de fonte. Não inventar contagens não auditadas.
 5. Ler o SHA atual antes de editar; escrever mudanças mínimas para evitar conflitos de conversas/automação.
 6. Quando a pesquisa for parcial, sinalizar claramente o que ficou sem cobertura.
+
+## Integração PCI visível no site (17/11/2026)
+- O **plugin PCI Concursos** está conectado e foi consultado para a pesquisa por cargo “médico” em PR, SC e SP. Resultados: 4 PR, 23 SC, 28 SP, total **53 editais PCI únicos** após desduplicação entre estados, entre os quais aparecem especialidades, Medicina Veterinária e certames nacionais.
+- O arquivo `candidatos_pci.json` registra um **retrato datado** dessas pesquisas, com status de cada edital (publicado, aguardando validação, especialidade/incompatibilidade, data futura/encerrada). Na primeira fotografia há **9 candidatos generalistas/compatíveis pendentes de validação oficial**, que aparecem no RadarMed na seção “Oportunidades em verificação” dentro da aba Oportunidades, separada da lista principal.
+- O arquivo `pci-pendentes.js` renderiza a seção de auditoria, exibe apenas as pistas com estado `aguardando_validacao_oficial` e respeita filtro de UF e busca textual. O navegador **não consulta o plugin PCI ao vivo**; é uma fotografia publicada por GitHub, atualizável pelo orquestrador após cada pesquisa.
+- A lista de vagas verificadas em `dados.json` foi ampliada com **12 registros médicos** de Araranguá, Curitibanos, São Carlos, Agronômica, Guarujá do Sul, Fraiburgo, Mogi Guaçu e Corumbataí. Há campos “Consultar edital” onde remuneração/requisitos específicos ainda não estavam disponíveis nas páginas oficiais consultadas; não são valores inventados.
+- A divergência de data de Umuarama está explicitamente descrita na base, com referência à banca Instituto Unicampo (02/12) e aviso da Prefeitura (30/11), até resolução oficial documentada.
+- **Ação restante:** continuar verificando os nove leads e ampliar buscas por sinônimos, especialidades com exigência esclarecida e cargos de nível superior compatíveis. Não afirmar cobertura total dos estados.
