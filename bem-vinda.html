@@ -228,7 +228,7 @@ h1{font-size:clamp(28px,3.2vw,41px);line-height:1.19;letter-spacing:-1.55px;marg
     next.textContent=step===sections.length-1?"Entrar no meu RadarMed 💚":step===0?"Começar o tour →":"Próximo passo →";
     counter.textContent=(step+1)+" de "+sections.length;
     announce.textContent="Passo "+(step+1)+". "+sections[step].querySelector("h1").textContent;
-    window.scrollTo({top:0,behavior:"instant"});
+    window.scrollTo({top:0,behavior:"auto"});
   }
   next.addEventListener("click",function(){
     if(step===sections.length-1){saveAndGo();return;}
