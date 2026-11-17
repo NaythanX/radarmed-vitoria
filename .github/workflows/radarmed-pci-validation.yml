@@ -41,6 +41,10 @@ jobs:
             assert.ok(v.cargo&&v.orgao&&v.url?.startsWith('https://'));
             assert.match(v.inscricoes_ate,/^\d{4}-\d{2}-\d{2}$/);
             assert.ok(Number.isInteger(v.imediatas)&&v.imediatas>=0);
+            assert.ok(v.cadastro_reserva==null||
+              (Number.isInteger(v.cadastro_reserva)&&v.cadastro_reserva>=0),
+              'cadastro_reserva precisa ser número ou null: '+v.id);
+            assert.ok(!v.banca||!v.fonte_banca||v.fonte_banca.startsWith('https://'));
           }
           const pciIds=new Set();
           for(const v of pci.candidatos){
