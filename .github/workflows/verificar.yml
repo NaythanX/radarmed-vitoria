@@ -1,0 +1,36 @@
+name: RadarMed — verificações
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: JavaScript sem erros de sintaxe
+        run: |
+          node --check auth.js
+          node --check updates.js
+      - name: Dados JSON e HTML válidos
+        run: |
+          python3 - <<'PY'
+          import json,re
+          from pathlib import Path
+          data=json.loads(Path('dados.json').read_text())
+          changes=json.loads(Path('novidades.json').read_text())
+          html=Path('index.html').read_text()
+          match=re.search(r'<script id="embedded-data" type="application/json">(.*?)</script>',html,re.S)
+          assert match, 'Base de contingência ausente'
+          json.loads(match.group(1))
+          assert isinstance(data['vagas'],list)
+          assert changes['atualizado_em'] == data['atualizado_em'], 'Histórico desatualizado'
+          for path in ('auth.js','updates.js','auth-config.json'):
+              assert (Path(path)).is_file(), path
+          print('Base e HTML válidos')
+          PY
+      - name: Testes do comparador
+        run: python3 -m unittest discover -s tests -v
