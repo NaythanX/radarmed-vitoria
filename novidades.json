@@ -3,13 +3,24 @@
   "comparado_com": "2026-11-17",
   "novos": [],
   "retificados": [
-    "mogi-guacu-clinico"
+    "agronomica-medico",
+    "ararangua-medico-i",
+    "ararangua-medico-psf",
+    "corumbatai-plantonista",
+    "corumbatai-saude-familia",
+    "curitibanos-clinico-20",
+    "curitibanos-clinico-40",
+    "fraiburgo-clinico",
+    "fraiburgo-saude-familia",
+    "guaruja-do-sul-medico",
+    "mogi-guacu-clinico",
+    "sao-carlos-medico-clinico"
   ],
   "retirados": [],
   "total_publicado": 26,
   "resumo": {
     "novos": 0,
-    "retificados": 1,
+    "retificados": 12,
     "retirados": 0
   }
 }
