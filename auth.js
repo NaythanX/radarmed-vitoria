@@ -12,8 +12,9 @@
   } catch (_) {}
   if (!config?.enabled || !config?.url || !config?.publishableKey) {
     button.disabled = true;
-    button.textContent = "☁ Conta em preparação";
-    info.textContent = "Seus salvos continuam neste navegador. A conta Google e a sincronização entre dispositivos ainda estão sendo configuradas.";
+    button.hidden = true;
+    button.textContent = "☁ Conta";
+    info.textContent = "Os favoritos ficam neste navegador e podem ser importados ao abrir o Prisma com sua conta. O RadarMed continua acessível sem login.";
     return;
   }
   let client;
