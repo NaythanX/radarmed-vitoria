@@ -157,6 +157,46 @@ main{max-width:1480px;margin:auto;padding:24px clamp(18px,3vw,44px) 0}
 .topbar-nav .nav-item:hover{color:#0b6448}
 .hero{background:linear-gradient(110deg,#0c2022,#10392e 58%,#1c694b)}
 </style>
+<style id="radarmed-changes-compact">
+/* Resumo editorial: so apresenta a linha de atualizacoes quando houver mudancas reais na base. */
+.changes-panel{
+  background:transparent;border:0;box-shadow:none;margin:14px 0 20px;padding:0;
+  color:#244b3a;
+}
+.changes-panel .changes-disclosure{
+  border:1px solid #d9e9de;background:#f8fcf9;border-radius:12px;overflow:hidden;
+}
+.changes-panel .changes-disclosure summary{
+  list-style:none;display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  min-height:44px;padding:11px 15px;cursor:pointer;color:#23533b;
+  font-size:12px;font-weight:730;
+}
+.changes-panel .changes-disclosure summary::-webkit-details-marker{display:none}
+.changes-panel .changes-disclosure summary:focus-visible{outline:3px solid #49bd84;outline-offset:-4px}
+.changes-panel .changes-disclosure summary:hover{background:#edf7ef}
+.changes-panel .changes-summary{display:inline-flex;gap:7px;align-items:center;flex-wrap:wrap;color:#587b68;font-weight:530}
+.changes-panel .changes-chip{
+  padding:3px 8px;border-radius:99px;background:#e3f3e9;color:#1b7652;font-size:10px;
+  font-weight:770;white-space:nowrap
+}
+.changes-panel .changes-expand{margin-left:auto;color:#20815b;font-size:11px;white-space:nowrap}
+.changes-panel details[open] .changes-expand{color:#638577}
+.changes-panel .changes-content{
+  border-top:1px solid #e1ebe4;padding:12px 16px 14px;
+  background:#fff;font-size:12px;color:#5c7668
+}
+.changes-panel .changes-content p{margin:0 0 8px}
+.changes-panel .changes-content ul{margin:4px 0 8px;padding-left:18px}
+.changes-panel .changes-content li{margin:0;padding:4px 0;font-size:12px}
+.changes-panel .changes-content a{color:#116e4f}
+.changes-panel .changes-content small{display:block;margin:10px 0 0;color:#789488;line-height:1.45;font-size:10px}
+.changes-panel .changes-content .changes-more{font-weight:700;color:#567f68}
+@media(max-width:600px){
+ .changes-panel .changes-disclosure summary{padding:10px 12px}
+ .changes-panel .changes-expand{margin-left:0}
+ .changes-panel .changes-content{padding:12px}
+}
+</style>
 </head>
 <body>
   <div class="app-shell">
@@ -196,7 +236,7 @@ main{max-width:1480px;margin:auto;padding:24px clamp(18px,3vw,44px) 0}
           <div class="cards-grid" id="featured-cards"></div>
           <div class="section-top radar-overview-stats-heading"><div><div class="minor-label">RESUMO DO RADAR</div><h2>Panorama atual</h2></div><span class="muted" id="summary-date">Situação em 17/11/2026</span></div>
           <div class="stats" id="stats"></div>
-          <section class="changes-panel" id="radarmed-changes" aria-label="Novidades desde a última revisão" aria-live="polite"><p>Conferindo histórico das atualizações…</p></section>
+          <section class="changes-panel" id="radarmed-changes" aria-label="Atualizações da base de concursos" hidden></section>
           <div class="lower-grid">
             <section class="panel"><div class="panel-head"><div><div class="minor-label">ATENÇÃO AOS PRAZOS</div><h3>Outras inscrições encerrando em breve</h3></div><span class="small-chip">Próximos 7 dias</span></div><div id="upcoming-list" class="deadline-list"></div></section>
             <section class="panel newsletter-panel"><div class="minor-label">FEITO COM CARINHO</div><h3>Um cantinho feito com amor. ❤️</h3><p>Vitória, criei este espaço pensando em você e nas conquistas que estão por vir. Quero estar ao seu lado, torcendo por cada passo. Te amo! — Nathan</p><div class="mini-schedule"><div><b>SEG</b><span>08h15</span></div><div class="schedule-arrow">↔</div><div><b>QUI</b><span>08h15</span></div></div><div class="note-under">O site mostra a última base publicada; a atualização automática dessa base ainda está em desenvolvimento.</div></section>
