@@ -24,3 +24,17 @@ document.addEventListener('click',event=>{
  if(ids.length)url.hash='radarImport='+ids.map(encodeURIComponent).join(',');
  anchor.href=url.toString();
 },{capture:true});
+
+function restoreFromPrisma(){
+ const params=new URLSearchParams(location.hash.slice(1));
+ if(!params.has('prismaSaved'))return;
+ const ids=[...new Set((params.get('prismaSaved')||'').split(',')
+   .filter(x=>/^[a-z0-9][a-z0-9-]{2,79}$/.test(x)))].slice(0,50);
+ if(!globalThis.RadarMedBridge?.isReady?.())return;
+ globalThis.RadarMedBridge.replaceFavorites(ids);
+ history.replaceState(null,'',location.pathname+location.search);
+ const indicator=document.getElementById('radarmed-account-status');
+ if(indicator)indicator.textContent='Favoritos atualizados com a conta do Prisma.';
+}
+window.addEventListener('radarmed:ready',restoreFromPrisma);
+restoreFromPrisma();
