@@ -2,14 +2,28 @@
   "atualizado_em": "2026-11-17",
   "comparado_com": "2026-11-17",
   "novos": [
-    "pouso-redondo-medico-30"
+    "agronomica-medico",
+    "ararangua-medico-i",
+    "ararangua-medico-psf",
+    "corumbatai-plantonista",
+    "corumbatai-saude-familia",
+    "curitibanos-clinico-20",
+    "curitibanos-clinico-40",
+    "fraiburgo-clinico",
+    "fraiburgo-saude-familia",
+    "guaruja-do-sul-medico",
+    "mogi-guacu-clinico",
+    "sao-carlos-medico-clinico"
   ],
-  "retificados": [],
+  "retificados": [
+    "umuarama-20",
+    "umuarama-40"
+  ],
   "retirados": [],
-  "total_publicado": 14,
+  "total_publicado": 26,
   "resumo": {
-    "novos": 1,
-    "retificados": 0,
+    "novos": 12,
+    "retificados": 2,
     "retirados": 0
   }
 }
