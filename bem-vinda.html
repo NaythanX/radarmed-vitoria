@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#123b32">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Uma apresentação guiada do RadarMed, feita com carinho para a Vitória.">
+<title>Um tour pelo seu RadarMed 💚</title>
+<style>
+:root{--dark:#153b33;--green:#188261;--green2:#286d5b;--mint:#e7f4eb;--ink:#1b352e;--muted:#73867e;--line:#dfe9e3;--surface:#ffffff;--page:#f2f7f4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+button,input{font:inherit}button{cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #73b99c;outline-offset:3px}
+a{color:var(--green);text-decoration:none}
+.wrap{min-height:100svh;display:grid;grid-template-columns:minmax(315px,.82fr) minmax(0,1.18fr);max-width:1480px;margin:0 auto;box-shadow:0 0 60px #163b3210}
+aside{position:relative;background:#143f34;color:#f5fff9;padding:45px clamp(23px,4vw,64px);min-height:100svh;overflow:hidden;display:flex;flex-direction:column}
+aside:after{content:"";position:absolute;width:420px;height:420px;border:1px solid #fff2;border-radius:50%;right:-230px;bottom:-155px;box-shadow:0 0 0 55px #ffffff09,0 0 0 115px #ffffff05;pointer-events:none}
+.brand{display:flex;gap:11px;align-items:center;font-size:23px;font-weight:850;letter-spacing:-1px}
+.brand-symbol{width:39px;height:39px;border-radius:13px;display:grid;place-items:center;background:#ddf4e7;color:#166647;font-size:24px}
+.aside-top{z-index:1}.side-kicker{font-size:11px;text-transform:uppercase;letter-spacing:2.2px;font-weight:750;color:#b7e1cd;margin-top:90px}
+.side-heading{max-width:380px;font-size:clamp(36px,4vw,61px);line-height:1.11;letter-spacing:-2.6px;font-weight:760;margin:17px 0 22px}
+.side-heading em{font-style:normal;color:#b2e4bf}
+.side-desc{max-width:390px;line-height:1.9;font-size:15px;color:#c8e4d5}
+.side-heart{width:122px;height:122px;display:grid;place-items:center;background:#ffffff13;border:1px solid #ffffff33;border-radius:34px;font-size:54px;margin:42px 0 20px;transform:rotate(-8deg)}
+.aside-footer{margin-top:auto;z-index:1;font-size:12px;color:#b8d6c8;padding-top:35px;display:flex;justify-content:space-between;gap:12px}
+aside .small-mark{letter-spacing:1px;font-size:11px;text-transform:uppercase}
+main{background:var(--surface);padding:35px clamp(22px,5.3vw,82px) 28px;min-width:0;display:flex;flex-direction:column;min-height:100svh}
+.topline{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.eyebrow{font-size:11px;letter-spacing:1.65px;color:#759689;text-transform:uppercase;font-weight:800}
+.skip{color:#647a70;padding:8px 0;border:0;background:none;font-size:12px;text-decoration:underline;text-underline-offset:4px}
+.progress-track{display:flex;gap:7px;margin-top:25px}
+.progress-segment{height:5px;background:#e4ede8;flex:1;border-radius:100px;transition:background .2s}
+.progress-segment.current,.progress-segment.done{background:#3b9b76}
+.live{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.step{display:none;animation:fadein .25s ease}.step.active{display:block}
+@keyframes fadein{from{opacity:.3;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+.step-label{font-size:12px;font-weight:800;letter-spacing:.6px;color:#319575;margin:34px 0 9px}
+h1,h2,p{margin-top:0}
+h1{font-size:clamp(28px,3.2vw,41px);line-height:1.19;letter-spacing:-1.55px;margin-bottom:15px}
+.copy{font-size:15px;color:#6f8179;line-height:1.85;max-width:620px;margin-bottom:24px}
+.demo{border:1px solid #e1ebe5;border-radius:18px;background:#f9fcfa;padding:19px;margin:17px 0 20px;box-shadow:0 15px 38px #1a44310c}
+.demo-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}
+.demo-label{font-size:11px;text-transform:uppercase;letter-spacing:1.1px;font-weight:850;color:#6c8f7f}
+.demo-note{border-radius:100px;background:#e4f4e9;color:#247453;font-size:11px;font-weight:750;padding:5px 9px}
+.demo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.tile{padding:14px 12px;border-radius:12px;background:#fff;border:1px solid #e5ede8;min-width:0}
+.tile b{display:block;font-size:24px;color:#1c6a50;line-height:1.3}.tile small{display:block;font-size:11px;color:#7b8d83;margin-top:4px}
+.fake-card{background:white;border:1px solid #e2eae5;border-radius:13px;padding:16px}
+.fake-card h3{font-size:15px;letter-spacing:-.3px;margin:8px 0 7px}
+.fake-card p{font-size:12px;color:#73867c;margin:0}
+.pills{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:13px}
+.demo-chip{border:1px solid #dce8df;border-radius:100px;background:#fff;color:#6d8178;padding:7px 11px;font-size:12px;font-weight:700}
+.demo-chip[aria-pressed="true"]{background:#d9efe2;color:#146e4b;border-color:#a9d9bd}
+.demo-search{width:100%;background:#fff;border:1px solid #dae6df;border-radius:10px;padding:12px 13px;color:#344f43;font-size:13px;margin-bottom:12px}
+.demo-feedback{font-size:12px;color:#207956;margin-top:10px;min-height:20px}
+.demo-favorite{background:#f1f7f3;border:1px solid #dce7e0;color:#8c9c92;border-radius:10px;padding:10px 13px;font-size:24px;line-height:1}
+.demo-favorite[aria-pressed="true"]{background:#fdf1eb;color:#d36e5e;border-color:#f4d4c7}
+.list{display:grid;gap:8px}
+.list-row{display:flex;align-items:center;gap:13px;padding:12px 13px;background:#fff;border:1px solid #e5ede7;border-radius:11px}
+.list-icon{font-size:19px;min-width:26px}
+.list-row strong{font-size:12px;display:block}.list-row span{font-size:11px;color:#8b9b91}
+.small{color:#7f9288;font-size:12px;line-height:1.65}
+.callout{border:1px solid #d1e8d9;background:#effaf2;color:#38644d;padding:12px 14px;border-radius:12px;font-size:12px;margin-top:12px}
+.note-love{padding:21px;background:#fff7ef;border:1px solid #f7e5d1;border-radius:15px;color:#775a41;font-size:14px;line-height:1.8}
+.nav-bottom{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:18px;border-top:1px solid var(--line)}
+.btn{border:0;border-radius:12px;padding:13px 22px;font-size:13px;font-weight:780;min-height:45px}
+.btn-primary{background:#188261;color:#fff;margin-left:auto;box-shadow:0 7px 18px #1b886026}
+.btn-primary:hover{background:#106b51}
+.btn-secondary{background:#edf4ef;color:#28644e}
+.btn:disabled{opacity:.35;cursor:default}
+.step-counter{font-size:12px;color:#8ca198}
+.preview-links{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:11px}
+.mini-tag{color:#287556;background:#e5f5e9;border-radius:7px;padding:5px 9px;font-size:10px;font-weight:800}
+.inline-link{font-size:12px;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:950px){.wrap{display:block}aside{min-height:auto;padding:20px 24px}.side-kicker,.side-heading,.side-desc,.side-heart,.aside-footer{display:none}.brand{font-size:20px}main{min-height:calc(100svh - 80px);padding:24px 23px}.step-label{margin-top:25px}}
+@media(max-width:600px){main{padding:19px 17px 22px}.demo{padding:13px}.demo-grid{gap:6px}.tile{padding:11px 8px}.tile b{font-size:20px}.tile small{font-size:10px}.nav-bottom{gap:7px}.btn{padding:12px 14px}.step-counter{font-size:11px}h1{font-size:30px}.copy{font-size:14px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside aria-label="RadarMed">
+    <div class="aside-top">
+      <div class="brand"><span class="brand-symbol" aria-hidden="true">✚</span> radar<span style="color:#addfc3">med</span></div>
+      <div class="side-kicker">Uma surpresa só sua</div>
+      <h2 class="side-heading">Pequenos passos.<br><em>Grandes sonhos.</em></h2>
+      <p class="side-desc">Preparei esse cantinho pensando em você. Antes de abrir o radar, quero te mostrar os caminhos — sem prova no final, prometo. 💚</p>
+      <div class="side-heart" aria-hidden="true">💌</div>
+    </div>
+    <div class="aside-footer"><span>Feito com amor, para a Vitória.</span><span class="small-mark">Nathan ♥</span></div>
+  </aside>
+  <main>
+    <div class="topline">
+      <span class="eyebrow">Seu primeiro passeio pelo RadarMed</span>
+      <button type="button" class="skip" id="skip">Pular apresentação</button>
+    </div>
+    <div class="progress-track" id="progress" aria-label="Progresso do tutorial" role="progressbar" aria-valuemin="1" aria-valuemax="7" aria-valuenow="1">
+      <span class="progress-segment"></span><span class="progress-segment"></span><span class="progress-segment"></span><span class="progress-segment"></span><span class="progress-segment"></span><span class="progress-segment"></span><span class="progress-segment"></span>
+    </div>
+    <div id="announce" class="live" aria-live="polite"></div>
+    <section class="step active" data-step="0" aria-labelledby="s0">
+      <div class="step-label">01 / 07 · UM COMEÇO ESPECIAL</div>
+      <h1 id="s0">Oi, Vitória! Essa é a entrada secreta. 💚</h1>
+      <p class="copy">Eu criei o RadarMed para deixar as oportunidades mais fáceis de encontrar e acompanhar. Só que, na empolgação, a gente te entregou um site inteiro e esqueceu o tutorial. 😅 Corrigimos essa parte!</p>
+      <div class="note-love">Não é uma cobrança, nem uma tarefa a mais. É só uma forma de dizer que eu acredito muito em você e quero estar por perto, torcendo pelas suas conquistas. ❤️<br><strong>— Nathan</strong></div>
+      <p class="small" style="margin-top:16px">São sete telas rápidas. No final, você entra no painel de verdade.</p>
+    </section>
+    <section class="step" data-step="1" aria-labelledby="s1" hidden>
+      <div class="step-label">02 / 07 · VISÃO GERAL</div>
+      <h1 id="s1">A primeira parada é o painel principal.</h1>
+      <p class="copy">Aqui você vê as oportunidades em destaque, as vagas imediatas, o que mudou desde a última revisão e as inscrições próximas do fim. É o lugar ideal para começar.</p>
+      <div class="demo">
+        <div class="demo-head"><span class="demo-label">Prévia da visão geral</span><span class="demo-note">Exemplo visual</span></div>
+        <div class="demo-grid"><div class="tile"><b>✦</b><small>Novidades</small></div><div class="tile"><b>✓</b><small>Vagas imediatas</small></div><div class="tile"><b>◷</b><small>Prazos próximos</small></div></div>
+        <div class="fake-card" style="margin-top:10px"><span class="mini-tag">OLHE PRIMEIRO</span><h3>Oportunidades em destaque</h3><p>O RadarMed coloca as seleções com vagas imediatas em evidência.</p></div>
+      </div>
+      <p class="small">Dica: a data de revisão aparece no painel. Antes de se inscrever, vale conferir eventuais retificações no edital oficial.</p>
+    </section>
+    <section class="step" data-step="2" aria-labelledby="s2" hidden>
+      <div class="step-label">03 / 07 · OPORTUNIDADES</div>
+      <h1 id="s2">Você escolhe o que quer encontrar.</h1>
+      <p class="copy">Na aba <strong>Oportunidades</strong>, pesquise cargo, cidade ou órgão. Filtre por Paraná, Santa Catarina ou São Paulo, escolha o tipo de vínculo e ordene por prazo ou remuneração.</p>
+      <div class="demo">
+        <div class="demo-head"><span class="demo-label">Experimente estes filtros</span><span class="demo-note">Demonstração</span></div>
+        <input id="demo-search" class="demo-search" type="text" autocomplete="off" placeholder="Experimente digitar: médico" aria-label="Busca de demonstração">
+        <div class="pills" role="group" aria-label="Filtrar estado na demonstração">
+          <button class="demo-chip" type="button" data-state="PR" aria-pressed="true">Paraná</button>
+          <button class="demo-chip" type="button" data-state="SC" aria-pressed="false">Santa Catarina</button>
+          <button class="demo-chip" type="button" data-state="SP" aria-pressed="false">São Paulo</button>
+        </div>
+        <div class="fake-card"><span class="mini-tag" id="demo-state-label">PARANÁ</span><h3 id="demo-result-title">Sua próxima busca começa aqui</h3><p id="demo-result-description">Aqui estamos só treinando os filtros. As vagas reais aparecem no painel completo.</p></div>
+        <div class="demo-feedback" id="demo-search-message" aria-live="polite">Experimente selecionar um estado ou digitar um cargo.</div>
+      </div>
+      <p class="small">Você ainda pode ativar “Somente vagas imediatas” e exportar a lista em CSV, se quiser.</p>
+    </section>
+    <section class="step" data-step="3" aria-labelledby="s3" hidden>
+      <div class="step-label">04 / 07 · DETALHES DO CONCURSO</div>
+      <h1 id="s3">Gostou de uma vaga? Abra os detalhes.</h1>
+      <p class="copy">Ao tocar em um concurso, você encontra as informações importantes reunidas: requisitos, salário, jornada, quantidade de vagas, vínculo, prazo de inscrição e data da prova.</p>
+      <div class="demo">
+        <div class="demo-head"><span class="demo-label">O que conferir antes da inscrição</span><span class="demo-note">Guia visual</span></div>
+        <div class="list">
+          <div class="list-row"><div class="list-icon">🎓</div><div><strong>Requisitos</strong><span>Graduação aceita, CRM e eventuais especializações</span></div></div>
+          <div class="list-row"><div class="list-icon">💰</div><div><strong>Condições</strong><span>Salário, benefícios, carga horária e tipo de contrato</span></div></div>
+          <div class="list-row"><div class="list-icon">📄</div><div><strong>Edital oficial</strong><span>Botão para abrir a página do órgão ou banca</span></div></div>
+        </div>
+        <div class="callout">O site ajuda a comparar, mas o edital oficial é sempre a fonte final para requisitos e datas.</div>
+      </div>
+    </section>
+    <section class="step" data-step="4" aria-labelledby="s4" hidden>
+      <div class="step-label">05 / 07 · FAVORITOS</div>
+      <h1 id="s4">Uma estrelinha para cada oportunidade especial. ☆</h1>
+      <p class="copy">Encontrou uma vaga que te interessou? Toque na estrela do cartão. Ela vai para a aba <strong>Salvos</strong>, para você voltar quando quiser.</p>
+      <div class="demo">
+        <div class="demo-head"><span class="demo-label">Teste a estrelinha</span><span class="demo-note">Demonstração</span></div>
+        <div class="fake-card" style="display:flex;justify-content:space-between;align-items:center;gap:14px">
+          <div><h3 style="margin-top:0">Um concurso que chamou atenção</h3><p>Esta é uma vaga fictícia só para experimentar o botão.</p></div>
+          <button type="button" class="demo-favorite" id="demo-favorite" aria-label="Salvar exemplo nos favoritos" aria-pressed="false">☆</button>
+        </div>
+        <div class="demo-feedback" id="favorite-message" aria-live="polite">Toque na estrela acima.</div>
+      </div>
+      <p class="small">Importante: por enquanto, os favoritos reais ficam guardados apenas neste navegador. A sincronização entre celular e computador está sendo preparada.</p>
+    </section>
+    <section class="step" data-step="5" aria-labelledby="s5" hidden>
+      <div class="step-label">06 / 07 · PRAZOS, AGENDA E E-MAIL</div>
+      <h1 id="s5">As datas importantes, todas no radar.</h1>
+      <p class="copy">Em <strong>Prazos e provas</strong>, as datas são agrupadas em ordem. Nos detalhes da vaga, “Adicionar à Agenda” abre o Google Agenda com um evento pronto para você conferir e salvar.</p>
+      <div class="demo">
+        <div class="demo-head"><span class="demo-label">O seu ritmo de acompanhamento</span><span class="demo-note">Segunda e quinta</span></div>
+        <div class="list">
+          <div class="list-row"><div class="list-icon">🗓️</div><div><strong>Prazos e provas</strong><span>Acompanhe quando terminam as inscrições e quando são as avaliações.</span></div></div>
+          <div class="list-row"><div class="list-icon">✉️</div><div><strong>Resumo por e-mail · 08h15</strong><span>Pesquisas programadas para segunda e quinta, com vagas e novidades.</span></div></div>
+          <div class="list-row"><div class="list-icon">💚</div><div><strong>Google Agenda</strong><span>Você confirma manualmente cada evento. Favoritar ainda não cria lembretes automáticos.</span></div></div>
+        </div>
+      </div>
+      <p class="small">Este guia só apresenta as funções: ele não cria inscrições, favoritos reais nem eventos na sua agenda.</p>
+    </section>
+    <section class="step" data-step="6" aria-labelledby="s6" hidden>
+      <div class="step-label">07 / 07 · O COMEÇO DE MUITAS CONQUISTAS</div>
+      <h1 id="s6">Prontinho. Agora o RadarMed é todo seu. ❤️</h1>
+      <p class="copy">Você já conhece os caminhos: visão geral, oportunidades, detalhes, favoritos e prazos. Pode explorar sem pressa, no seu ritmo, e sempre que quiser.</p>
+      <div class="note-love">Eu sei o quanto você se dedica, e gosto de imaginar quantas coisas bonitas ainda estão por vir. Não importa qual seja o próximo passo: eu vou continuar aqui, torcendo por você. <strong>Te amo!</strong> 💚<br><strong>— Nathan</strong></div>
+      <div class="callout">Depois de concluir esta apresentação, o link de boas-vindas leva direto ao RadarMed neste navegador. Para rever o tutorial, existe uma opção no próprio site.</div>
+      <div class="preview-links"><span class="mini-tag">Seu cantinho está pronto</span><span class="small">Sem teste, sem cobrança, sem cronômetro. ✨</span></div>
+    </section>
+    <div class="nav-bottom">
+      <button type="button" id="back" class="btn btn-secondary" disabled>← Voltar</button>
+      <span class="step-counter" id="step-counter">1 de 7</span>
+      <button type="button" id="next" class="btn btn-primary">Começar o tour →</button>
+    </div>
+  </main>
+</div>
+<script>
+(function(){
+  "use strict";
+  var key="radarmed.tutorial.v1.seen";
+  var mainUrl="./index.html";
+  var params=new URLSearchParams(window.location.search);
+  var replay=params.get("rever")==="1";
+  try{
+    if(!replay && window.localStorage.getItem(key)==="yes"){
+      window.location.replace(mainUrl);
+      return;
+    }
+  }catch(_){}
+  var sections=Array.from(document.querySelectorAll(".step"));
+  var segments=Array.from(document.querySelectorAll(".progress-segment"));
+  var back=document.getElementById("back");
+  var next=document.getElementById("next");
+  var skip=document.getElementById("skip");
+  var counter=document.getElementById("step-counter");
+  var progress=document.getElementById("progress");
+  var announce=document.getElementById("announce");
+  var step=0;
+  function saveAndGo(){
+    try{window.localStorage.setItem(key,"yes");}catch(_){}
+    window.location.assign(mainUrl);
+  }
+  function show(n){
+    step=Math.max(0,Math.min(sections.length-1,n));
+    sections.forEach(function(el,i){var active=i===step;el.hidden=!active;el.classList.toggle("active",active);});
+    segments.forEach(function(el,i){el.classList.toggle("current",i===step);el.classList.toggle("done",i<step);});
+    progress.setAttribute("aria-valuenow",String(step+1));
+    back.disabled=step===0;
+    next.textContent=step===sections.length-1?"Entrar no meu RadarMed 💚":step===0?"Começar o tour →":"Próximo passo →";
+    counter.textContent=(step+1)+" de "+sections.length;
+    announce.textContent="Passo "+(step+1)+". "+sections[step].querySelector("h1").textContent;
+    window.scrollTo({top:0,behavior:"instant"});
+  }
+  next.addEventListener("click",function(){
+    if(step===sections.length-1){saveAndGo();return;}
+    show(step+1);
+  });
+  back.addEventListener("click",function(){show(step-1);});
+  skip.addEventListener("click",saveAndGo);
+  document.addEventListener("keydown",function(ev){
+    if(["INPUT","TEXTAREA"].includes(document.activeElement.tagName))return;
+    if(ev.key==="ArrowRight" && !ev.altKey && !ev.ctrlKey && !ev.metaKey){ev.preventDefault();if(step<sections.length-1)show(step+1);}
+    if(ev.key==="ArrowLeft" && !ev.altKey && !ev.ctrlKey && !ev.metaKey){ev.preventDefault();if(step>0)show(step-1);}
+  });
+  var demoState="PR";
+  var stateNames={PR:"PARANÁ",SC:"SANTA CATARINA",SP:"SÃO PAULO"};
+  function updateDemo(){
+    var search=document.getElementById("demo-search").value.trim();
+    document.getElementById("demo-state-label").textContent=stateNames[demoState];
+    document.getElementById("demo-result-title").textContent=search? "Buscando: "+search : "Sua próxima busca começa aqui";
+    document.getElementById("demo-result-description").textContent="Exemplo do filtro em "+stateNames[demoState].toLowerCase()+". No RadarMed, esta busca seleciona vagas reais da base publicada.";
+    document.getElementById("demo-search-message").textContent="Boa! Esse filtro ajuda a encontrar só o que interessa a você.";
+  }
+  document.querySelectorAll(".demo-chip").forEach(function(btn){
+    btn.addEventListener("click",function(){
+      demoState=btn.getAttribute("data-state");
+      document.querySelectorAll(".demo-chip").forEach(function(other){other.setAttribute("aria-pressed",String(other===btn));});
+      updateDemo();
+    });
+  });
+  document.getElementById("demo-search").addEventListener("input",updateDemo);
+  var favorite=document.getElementById("demo-favorite");
+  favorite.addEventListener("click",function(){
+    var saved=favorite.getAttribute("aria-pressed")==="true";
+    favorite.setAttribute("aria-pressed",String(!saved));
+    favorite.textContent=saved?"☆":"★";
+    favorite.setAttribute("aria-label",saved?"Salvar exemplo nos favoritos":"Remover exemplo dos favoritos");
+    document.getElementById("favorite-message").textContent=saved?"Exemplo removido. No site, funciona do mesmo jeito.":"Exemplo marcado! No site, ele apareceria na aba Salvos.";
+  });
+  show(0);
+})();
+</script>
+</body>
+</html>
