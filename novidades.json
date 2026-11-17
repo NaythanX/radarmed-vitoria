@@ -1,29 +1,15 @@
 {
   "atualizado_em": "2026-11-17",
   "comparado_com": "2026-11-17",
-  "novos": [
-    "agronomica-medico",
-    "ararangua-medico-i",
-    "ararangua-medico-psf",
-    "corumbatai-plantonista",
-    "corumbatai-saude-familia",
-    "curitibanos-clinico-20",
-    "curitibanos-clinico-40",
-    "fraiburgo-clinico",
-    "fraiburgo-saude-familia",
-    "guaruja-do-sul-medico",
-    "mogi-guacu-clinico",
-    "sao-carlos-medico-clinico"
-  ],
+  "novos": [],
   "retificados": [
-    "umuarama-20",
-    "umuarama-40"
+    "mogi-guacu-clinico"
   ],
   "retirados": [],
   "total_publicado": 26,
   "resumo": {
-    "novos": 12,
-    "retificados": 2,
+    "novos": 0,
+    "retificados": 1,
     "retirados": 0
   }
 }
