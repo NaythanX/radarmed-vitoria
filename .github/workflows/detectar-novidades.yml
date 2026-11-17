@@ -1,0 +1,36 @@
+name: RadarMed — detectar novidades
+on:
+  push:
+    branches: [main]
+    paths: [dados.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  historico:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          persist-credentials: true
+      - name: Comparar bases e gerar novidades
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git show HEAD^:dados.json > /tmp/radarmed-anterior.json 2>/dev/null; then
+            python3 scripts/build_updates.py --anterior /tmp/radarmed-anterior.json --atual dados.json --saida novidades.json
+          else
+            cp dados.json /tmp/radarmed-anterior.json
+            python3 scripts/build_updates.py --anterior /tmp/radarmed-anterior.json --atual dados.json --saida novidades.json
+          fi
+      - name: Publicar histórico
+        shell: bash
+        run: |
+          if ! git diff --quiet -- novidades.json || [ -n "$(git ls-files --others --exclude-standard -- novidades.json)" ]; then
+            git config user.name "RadarMed Bot"
+            git config user.email "radarmed-bot@users.noreply.github.com"
+            git add novidades.json
+            git commit -m "Atualiza novidades do RadarMed [skip ci]"
+            git push
+          fi
