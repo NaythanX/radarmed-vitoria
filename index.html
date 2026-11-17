@@ -60,6 +60,25 @@
 .pci-empty{font-size:13px;color:#7b8a7f}
 @media(max-width:650px){.pci-heading{flex-direction:column}.pci-cards{grid-template-columns:1fr}.pci-heading h2{font-size:20px}}
 </style>
+<style id="prisma-ecosystem-bridge">
+/* RadarMed mantem identidade independente, mas oferece acesso claro ao Prisma. */
+.radar-network-label{font-weight:850;font-size:10px;letter-spacing:1.3px;color:#7d918b;margin:22px 12px 8px}
+.radar-network{border:1px solid #d8eadd;border-radius:14px;background:#f3faf5;padding:10px;display:grid;gap:5px;margin:0 2px 14px}
+.radar-network a{min-height:39px;padding:9px 11px;display:flex;align-items:center;gap:9px;color:#245a44;text-decoration:none;font-weight:750;font-size:12px;border-radius:9px}
+.radar-network a:hover,.radar-network a:focus-visible{background:#e2f3e8;color:#155f3d}
+.radar-network .radar-network-prisma{background:#fff;border:1px solid #c4e2cf;color:#146844}
+.radar-network .radar-network-prisma img{width:23px;height:23px;object-fit:contain;flex:none}
+.horizon-portal{display:inline-flex;align-items:center;gap:7px;font-weight:800!important;background:#e9f6ed!important;color:#0e6847!important;border:1px solid #bce1c9!important}
+.horizon-portal img{width:23px;height:23px;object-fit:contain}
+.radar-network-banner{display:flex;align-items:center;justify-content:space-between;gap:18px;background:#fff;border:1px solid #e0ebe3;border-radius:14px;padding:13px 16px;margin:0 0 17px}
+.radar-network-banner strong{font-size:13px;color:#184b37}
+.radar-network-banner p{font-size:12px;color:#687c70;margin:4px 0 0;line-height:1.5}
+.radar-network-banner a{display:inline-flex;align-items:center;justify-content:center;min-height:39px;background:#daf3e3;color:#0d6140;border:1px solid #bde2ca;border-radius:9px;text-decoration:none;white-space:nowrap;font-size:12px;font-weight:830;padding:10px 15px}
+.radar-network-banner a:hover{background:#c7e9d3}
+.mobile-nav .radar-mobile-prisma{display:inline-flex;align-items:center;justify-content:center;gap:4px;flex:1;min-height:35px;border-radius:9px;color:#135c3b;background:#e0f4e9;text-decoration:none;font-weight:820}
+@media(max-width:850px){.radar-network-banner{align-items:flex-start;flex-direction:column}.radar-network-banner a{width:100%}.topbar-right .horizon-portal{padding:6px 8px!important;font-size:11px!important}}
+@media(max-width:600px){.horizon-portal{font-size:0!important;padding:6px!important}.horizon-portal img{width:27px;height:27px}.mobile-nav .radar-mobile-prisma{padding:7px 9px;font-size:11px!important}}
+</style>
 </head>
 <body>
   <div class="app-shell">
@@ -72,6 +91,12 @@
         <button type="button" class="nav-item" data-view="calendar"><span class="nav-ico">▦</span> Prazos e provas</button>
         <button type="button" class="nav-item" data-view="favorites"><span class="nav-ico">☆</span> Salvos <span id="nav-saved" class="nav-count">0</span></button>
       </nav>
+      <div class="radar-network-label">FERRAMENTAS CONECTADAS</div>
+      <nav class="radar-network" aria-label="Acessar ferramentas do Prisma">
+        <a class="radar-network-prisma" href="https://osce-vitoria-piloto.onrender.com/dashboard.html"><img src="./assets/prisma-mark.svg" alt=""> Abrir o Prisma ↗</a>
+        <a href="https://osce-vitoria-piloto.onrender.com/questions.html"><span aria-hidden="true">☷</span> Questões e provas ↗</a>
+        <a href="https://osce-vitoria-piloto.onrender.com/osce.html"><span aria-hidden="true">✚</span> OSCE Clínico ↗</a>
+      </nav>
       <div class="sidebar-bottom">
         <div class="schedule-box"><div class="schedule-dot"></div><div><strong>Radar ativo</strong><span>Segundas e quintas<br>às 08h15</span></div></div>
         <span class="side-help">Somente cargos superiores compatíveis com Medicina.</span>
@@ -79,12 +104,17 @@
     </aside>
 
     <div class="main-shell">
-      <header class="topbar"><div class="mobile-brand"><span class="mobile-cross">✚</span> radarmed</div><div class="crumb">Painel <span>/</span> <strong id="page-crumb">Visão geral</strong></div><div class="topbar-right"><span class="topbar-update"><span class="live-dot"></span> Dados revisados em <strong id="data-updated-top">17/11/2026</strong></span><button type="button" id="radarmed-auth" class="radarmed-auth" disabled hidden>☁ Conta</button><a class="horizon-portal" href="https://osce-vitoria-piloto.onrender.com/dashboard.html" title="Abrir plataforma de estudos Prisma">✦ Prisma</a><button class="icon-button" type="button" id="btn-help" aria-label="Sobre o radar" title="Como funciona">?</button></div></header>
+      <header class="topbar"><div class="mobile-brand"><span class="mobile-cross">✚</span> radarmed</div><div class="crumb">Painel <span>/</span> <strong id="page-crumb">Visão geral</strong></div><div class="topbar-right"><span class="topbar-update"><span class="live-dot"></span> Dados revisados em <strong id="data-updated-top">17/11/2026</strong></span><button type="button" id="radarmed-auth" class="radarmed-auth" disabled hidden>☁ Conta</button><a class="horizon-portal" href="https://osce-vitoria-piloto.onrender.com/dashboard.html" title="Acessar a plataforma Prisma: estudos, concursos e OSCE" aria-label="Abrir a plataforma Prisma"><img src="./assets/prisma-mark.svg" alt=""> Abrir Prisma ↗</a><button class="icon-button" type="button" id="btn-help" aria-label="Sobre o radar" title="Como funciona">?</button></div></header>
       <nav class="mobile-nav" aria-label="Navegação mobile">
-        <button data-view="overview" class="active">Visão geral</button><button data-view="opportunities">Vagas</button><button data-view="calendar">Prazos</button><button data-view="favorites">Salvos</button>
+        <button data-view="overview" class="active">Visão geral</button><button data-view="opportunities">Vagas</button><button data-view="calendar">Prazos</button><button data-view="favorites">Salvos</button><a class="radar-mobile-prisma" href="https://osce-vitoria-piloto.onrender.com/dashboard.html" aria-label="Abrir plataforma Prisma">Prisma ↗</a>
       </nav>
 
       <main id="main">
+        <section class="radar-network-banner" aria-label="Continuar seus estudos no Prisma">
+          <div><strong>RadarMed, estudos e OSCE estão conectados pelo Prisma.</strong>
+          <p>Encontre oportunidades aqui. No Prisma, organize a preparação, resolva questões e use as estações clínicas quando fizer sentido.</p></div>
+          <a href="https://osce-vitoria-piloto.onrender.com/dashboard.html">Estudar no Prisma ↗</a>
+        </section>
         <section class="hero" id="hero">
           <div class="hero-copy"><div class="eyebrow"><span class="tiny-line"></span> ENCONTRE SUA PRÓXIMA OPORTUNIDADE</div><h1>Seu próximo passo<br><em>começa aqui.</em></h1><p>Concursos e processos seletivos selecionados para quem tem graduação em Medicina. Sem cargos incompatíveis, sem perder prazos.</p><div class="hero-buttons"><button class="btn primary-btn" type="button" id="go-vacancies">Explorar oportunidades <span>↗</span></button><button class="btn outline-btn" type="button" id="go-calendar">Ver próximos prazos <span>→</span></button></div></div>
           <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orb orb-a"></div><div class="orb orb-b"></div><svg class="art-cross" viewBox="0 0 220 220" fill="none"><rect x="91" y="18" width="38" height="184" rx="19" fill="#D1FFF0"/><rect x="18" y="91" width="184" height="38" rx="19" fill="#D1FFF0"/><path d="M47 113h32l12-21 16 42 13-25h53" stroke="#175D54" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="floating-note"><span class="floating-icon">✦</span><span>Oportunidades<br><b>verificadas</b></span></div></div>
