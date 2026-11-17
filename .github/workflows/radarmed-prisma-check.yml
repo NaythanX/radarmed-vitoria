@@ -1,0 +1,40 @@
+name: RadarMed ↔ Prisma — validação
+on:
+  pull_request:
+  push:
+    branches: ['feat/radarmed-account-sync-2026-11',main]
+    paths:
+      - 'index.html'
+      - 'study-bridge.js'
+      - 'auth.js'
+      - '.github/workflows/radarmed-prisma-check.yml'
+jobs:
+  static-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validar JavaScript e comunicação sem credenciais
+        run: |
+          node --check study-bridge.js
+          node --check auth.js
+          node - <<'NODE'
+          const fs=require('fs');
+          const assert=require('node:assert/strict');
+          const html=fs.readFileSync('index.html','utf8');
+          const script=html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+          assert.ok(script);
+          new Function(script);
+          assert.match(html,/dialog-calendar-exam/);
+          assert.match(html,/Ver meus favoritos no Prisma/);
+          const fn=html.match(/function googleCalendarUrl\(v,kind='registration'\)\{([\s\S]*?)\n  \}/);
+          assert.ok(fn);
+          const build=new Function('v','kind',fn[1]);
+          const v={cargo:'Médico',prova:'2026-12-20',inscricoes_ate:'2026-12-01',orgao:'Prefeitura',cidade:'Curitiba',uf:'PR',url:'https://www.gov.br'};
+          const exam=new URL(build(v,'exam'));
+          const registration=new URL(build(v,'registration'));
+          assert.equal(exam.searchParams.get('dates'),'20261220/20261221');
+          assert.equal(registration.searchParams.get('dates'),'20261201/20261202');
+          assert.match(fs.readFileSync('study-bridge.js','utf8'),/radarImport/);
+          assert.match(fs.readFileSync('study-bridge.js','utf8'),/prismaSaved/);
+          console.log('RadarMed: eventos, favoritos e scripts OK');
+          NODE
