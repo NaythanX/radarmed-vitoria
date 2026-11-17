@@ -1,0 +1,60 @@
+name: RadarMed — PCI candidatos e editais
+on:
+  push:
+    branches: [main]
+    paths:
+      - dados.json
+      - candidatos_pci.json
+      - pci-pendentes.js
+      - index.html
+      - .github/workflows/radarmed-pci-validation.yml
+  pull_request:
+    paths:
+      - dados.json
+      - candidatos_pci.json
+      - pci-pendentes.js
+      - index.html
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validar scripts, IDs, prazos e separação PCI
+        run: |
+          node --check pci-pendentes.js
+          node - <<'NODE'
+          const assert=require('node:assert/strict');
+          const fs=require('node:fs');
+          const d=JSON.parse(fs.readFileSync('dados.json','utf8'));
+          const pci=JSON.parse(fs.readFileSync('candidatos_pci.json','utf8'));
+          const html=fs.readFileSync('index.html','utf8');
+          assert.match(html,/pci-pendentes\.js/);
+          assert.match(html,/pci-pendentes-estilos/);
+          assert.ok(Array.isArray(d.vagas)&&d.vagas.length>0);
+          assert.ok(Array.isArray(pci.candidatos));
+          const ids=new Set();
+          for(const v of d.vagas){
+            assert.match(v.id,/^[a-z0-9][a-z0-9-]{2,79}$/);
+            assert.ok(!ids.has(v.id),'ID duplicado: '+v.id);
+            ids.add(v.id);
+            assert.match(v.uf,/^(PR|SC|SP)$/);
+            assert.ok(v.cargo&&v.orgao&&v.url?.startsWith('https://'));
+            assert.match(v.inscricoes_ate,/^\d{4}-\d{2}-\d{2}$/);
+            assert.ok(Number.isInteger(v.imediatas)&&v.imediatas>=0);
+          }
+          const pciIds=new Set();
+          for(const v of pci.candidatos){
+            assert.ok(Number.isInteger(v.pci_id));
+            assert.ok(!pciIds.has(v.pci_id),'PCI duplicado: '+v.pci_id);
+            pciIds.add(v.pci_id);
+            assert.ok(['publicado_na_base','aguardando_validacao_oficial','exigencia_de_especialidade_ou_incompatibilidade_a_verificar','inscricoes_futuras_ou_encerradas'].includes(v.situacao));
+            assert.ok(Array.isArray(v.cargos_genericos));
+            assert.ok(v.link_pci?.startsWith('https://www.pciconcursos.com.br/'));
+            for(const cargo of v.cargos_genericos){
+              assert.doesNotMatch(cargo.toUpperCase(),/VETERIN/);
+            }
+          }
+          assert.equal(pci.meta.editais_unicos_encontrados,pci.candidatos.length);
+          assert.equal(pci.meta.pendentes_genericos,pci.candidatos.filter(x=>x.situacao==='aguardando_validacao_oficial').length);
+          console.log('Base e fila PCI válidas:',d.vagas.length,'cargos publicados;',pci.candidatos.length,'pistas PCI');
+          NODE
