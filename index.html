@@ -79,81 +79,128 @@
 @media(max-width:850px){.radar-network-banner{align-items:flex-start;flex-direction:column}.radar-network-banner a{width:100%}.topbar-right .horizon-portal{padding:6px 8px!important;font-size:11px!important}}
 @media(max-width:600px){.horizon-portal{font-size:0!important;padding:6px!important}.horizon-portal img{width:27px;height:27px}.mobile-nav .radar-mobile-prisma{padding:7px 9px;font-size:11px!important}}
 </style>
+<style id="radarmed-horizontal-default">
+/* Layout editorial: um unico cabeçalho responsivo, sem barra lateral nem faixas repetidas. */
+.app-shell{display:block;min-height:100vh}
+.sidebar{display:none!important}
+.main-shell{width:100%;min-width:0}
+.radar-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.topbar{position:sticky;top:0;z-index:12;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(10px,2vw,30px);align-items:center;height:auto;min-height:76px;padding:12px clamp(18px,3vw,44px);background:rgba(255,255,255,.98);box-shadow:0 2px 10px rgba(20,48,45,.04)}
+.radar-top-brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;flex:none;min-width:0}
+.radar-top-brand:hover .radar-brand-name{color:#0b7457}
+.radar-brand-icon{width:38px;height:38px;display:grid;place-items:center;background:#0c453b;border-radius:10px;color:#d4f8e3;flex:none}
+.radar-brand-icon svg{width:25px;height:25px}
+.radar-brand-copy{display:flex;flex-direction:column;gap:3px}
+.radar-brand-name{font-size:23px;line-height:1;letter-spacing:-1.1px;font-weight:850;color:#132e31}
+.radar-brand-name span{color:#159771}
+.radar-brand-copy small{font-size:8px;letter-spacing:1px;color:#8d9ba9;font-weight:780}
+.topbar-nav{display:flex;align-items:center;justify-content:center;gap:3px;min-width:0}
+.topbar-nav .nav-item{display:inline-flex;align-items:center;justify-content:center;gap:6px;flex:none;width:auto;min-height:40px;border:0;padding:9px 11px;font-size:12px;line-height:1.2;border-radius:9px;color:#59706f;background:transparent;font-weight:710}
+.topbar-nav .nav-item:hover{background:#f1f7f4;color:#166345}
+.topbar-nav .nav-item.active{background:#e5f5eb;color:#106746}
+.topbar-nav .nav-count{margin:0 0 0 2px;padding:3px 6px;border-radius:6px;font-size:10px}
+.topbar-right{gap:10px;flex:none}
+.topbar-update{white-space:nowrap;font-size:10px}
+.horizon-portal{min-height:39px;padding:8px 12px!important;font-size:12px!important;text-decoration:none}
+.horizon-portal img{width:22px;height:22px}
+.mobile-nav,.radar-network-banner,.welcome-guide{display:none!important}
+main{max-width:1480px;margin:auto;padding:24px clamp(18px,3vw,44px) 0}
+.hero{min-height:0;border-radius:16px;padding:26px 34px;background:linear-gradient(108deg,#102f36,#155b4a);box-shadow:none}
+.hero-copy{max-width:850px}
+.hero h1{font-size:clamp(26px,2.5vw,37px);letter-spacing:-1.25px;margin:11px 0}
+.hero p{font-size:12px;margin-bottom:16px;max-width:770px}
+.hero-art{display:none}
+.hero-buttons .outline-btn{display:none}
+.view-section{min-height:0;margin-top:22px}
+#overview-section .split-heading{margin-top:0;align-items:flex-end}
+.radar-ranking-note{max-width:690px;font-size:11px;line-height:1.6;color:#73898b;margin:8px 0 0}
+.radar-overview-stats-heading{margin-top:30px}
+.radar-overview-stats-heading h2{font-size:19px}
+#overview-section .op-card{min-height:0}
+#overview-section .lower-grid{margin-top:24px}
+@media(max-width:1200px){
+  .topbar-update{display:none}
+  .topbar{gap:12px}
+  .topbar-nav .nav-item{padding:8px 9px;font-size:11px}
+}
+@media(max-width:820px){
+  .topbar{display:flex;flex-wrap:wrap;justify-content:space-between;row-gap:8px;padding:10px 15px 8px;min-height:0}
+  .radar-brand-name{font-size:20px}
+  .radar-brand-icon{height:34px;width:34px}
+  .radar-brand-icon svg{width:23px;height:23px}
+  .topbar-right{margin-left:auto;gap:8px}
+  .topbar-nav{order:3;justify-content:flex-start;width:100%;overflow-x:auto;scrollbar-width:thin;overscroll-behavior-x:contain;padding:3px 0}
+  .topbar-nav .nav-item{min-height:38px;font-size:11px;padding:8px 10px}
+  .mobile-brand,.mobile-nav{display:none!important}
+  .hero{padding:22px 23px}
+  main{padding:18px 15px 0}
+}
+@media(max-width:420px){
+  .radar-brand-copy small{font-size:7px}
+  .horizon-portal{padding:6px 8px!important;min-height:36px;font-size:11px!important}
+  .horizon-portal img{width:20px;height:20px}
+  .hero h1{font-size:29px}
+  .hero-buttons{flex-wrap:wrap}
+  .topbar-right .icon-button{width:29px;height:29px}
+}
+</style>
 </head>
 <body>
   <div class="app-shell">
-    <aside class="sidebar" aria-label="Navegação principal">
-      <div class="brand"><div class="brand-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 6v20M6 16h20" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.3" opacity=".45"/></svg></div><div><span class="brand-name">radar<span>med</span></span><div class="brand-sub">CONCURSOS DA VITÓRIA</div></div></div>
-      <div class="nav-label">PAINEL</div>
-      <nav class="main-nav" aria-label="Seções">
-        <button type="button" class="nav-item active" data-view="overview"><span class="nav-ico">◫</span> Visão geral</button>
-        <button type="button" class="nav-item" data-view="opportunities"><span class="nav-ico">▤</span> Oportunidades <span id="nav-count" class="nav-count">0</span></button>
-        <button type="button" class="nav-item" data-view="calendar"><span class="nav-ico">▦</span> Prazos e provas</button>
-        <button type="button" class="nav-item" data-view="favorites"><span class="nav-ico">☆</span> Salvos <span id="nav-saved" class="nav-count">0</span></button>
-      </nav>
-      <div class="radar-network-label">FERRAMENTAS CONECTADAS</div>
-      <nav class="radar-network" aria-label="Acessar ferramentas do Prisma">
-        <a class="radar-network-prisma" href="https://osce-vitoria-piloto.onrender.com/dashboard.html"><img src="./assets/prisma-mark.svg" alt=""> Abrir o Prisma ↗</a>
-        <a href="https://osce-vitoria-piloto.onrender.com/questions.html"><span aria-hidden="true">☷</span> Questões e provas ↗</a>
-        <a href="https://osce-vitoria-piloto.onrender.com/osce.html"><span aria-hidden="true">✚</span> OSCE Clínico ↗</a>
-      </nav>
-      <div class="sidebar-bottom">
-        <div class="schedule-box"><div class="schedule-dot"></div><div><strong>Radar ativo</strong><span>Segundas e quintas<br>às 08h15</span></div></div>
-        <span class="side-help">Somente cargos superiores compatíveis com Medicina.</span>
-      </div>
-    </aside>
-
     <div class="main-shell">
-      <header class="topbar"><div class="mobile-brand"><span class="mobile-cross">✚</span> radarmed</div><div class="crumb">Painel <span>/</span> <strong id="page-crumb">Visão geral</strong></div><div class="topbar-right"><span class="topbar-update"><span class="live-dot"></span> Dados revisados em <strong id="data-updated-top">17/11/2026</strong></span><button type="button" id="radarmed-auth" class="radarmed-auth" disabled hidden>☁ Conta</button><a class="horizon-portal" href="https://osce-vitoria-piloto.onrender.com/dashboard.html" title="Acessar a plataforma Prisma: estudos, concursos e OSCE" aria-label="Abrir a plataforma Prisma"><img src="./assets/prisma-mark.svg" alt=""> Abrir Prisma ↗</a><button class="icon-button" type="button" id="btn-help" aria-label="Sobre o radar" title="Como funciona">?</button></div></header>
-      <nav class="mobile-nav" aria-label="Navegação mobile">
-        <button data-view="overview" class="active">Visão geral</button><button data-view="opportunities">Vagas</button><button data-view="calendar">Prazos</button><button data-view="favorites">Salvos</button><a class="radar-mobile-prisma" href="https://osce-vitoria-piloto.onrender.com/dashboard.html" aria-label="Abrir plataforma Prisma">Prisma ↗</a>
-      </nav>
-
+      <header class="topbar">
+        <a href="#main" class="radar-top-brand" aria-label="RadarMed, voltar ao painel" data-goto="overview">
+          <span class="radar-brand-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 6v20M6 16h20" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.3" opacity=".45"/></svg></span>
+          <span class="radar-brand-copy"><span class="radar-brand-name">radar<span>med</span></span><small>CONCURSOS DA VITÓRIA</small></span>
+        </a>
+        <nav class="topbar-nav" aria-label="Seções do RadarMed">
+          <button type="button" class="nav-item active" data-view="overview">Visão geral</button>
+          <button type="button" class="nav-item" data-view="opportunities">Oportunidades <span id="nav-count" class="nav-count">0</span></button>
+          <button type="button" class="nav-item" data-view="calendar">Prazos e provas</button>
+          <button type="button" class="nav-item" data-view="favorites">Salvos <span id="nav-saved" class="nav-count">0</span></button>
+        </nav>
+        <div class="topbar-right">
+          <span class="topbar-update"><span class="live-dot"></span> Base revisada em <strong id="data-updated-top">17/11/2026</strong></span>
+          <button type="button" id="radarmed-auth" class="radarmed-auth" disabled hidden>☁ Conta</button>
+          <a class="horizon-portal" href="https://osce-vitoria-piloto.onrender.com/dashboard.html" title="Abrir plataforma Prisma" aria-label="Abrir a plataforma Prisma"><img src="./assets/prisma-mark.svg" alt=""> Prisma ↗</a>
+          <button class="icon-button" type="button" id="btn-help" aria-label="Sobre o RadarMed" title="Informações e ajuda">?</button>
+        </div>
+        <span id="page-crumb" class="radar-sr-only" aria-live="polite">Visão geral</span>
+      </header>
       <main id="main">
-        <section class="radar-network-banner" aria-label="Continuar seus estudos no Prisma">
-          <div><strong>RadarMed, estudos e OSCE estão conectados pelo Prisma.</strong>
-          <p>Encontre oportunidades aqui. No Prisma, organize a preparação, resolva questões e use as estações clínicas quando fizer sentido.</p></div>
-          <a href="https://osce-vitoria-piloto.onrender.com/dashboard.html">Estudar no Prisma ↗</a>
-        </section>
         <section class="hero" id="hero">
           <div class="hero-copy"><div class="eyebrow"><span class="tiny-line"></span> ENCONTRE SUA PRÓXIMA OPORTUNIDADE</div><h1>Seu próximo passo<br><em>começa aqui.</em></h1><p>Concursos e processos seletivos selecionados para quem tem graduação em Medicina. Sem cargos incompatíveis, sem perder prazos.</p><div class="hero-buttons"><button class="btn primary-btn" type="button" id="go-vacancies">Explorar oportunidades <span>↗</span></button><button class="btn outline-btn" type="button" id="go-calendar">Ver próximos prazos <span>→</span></button></div></div>
           <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orb orb-a"></div><div class="orb orb-b"></div><svg class="art-cross" viewBox="0 0 220 220" fill="none"><rect x="91" y="18" width="38" height="184" rx="19" fill="#D1FFF0"/><rect x="18" y="91" width="184" height="38" rx="19" fill="#D1FFF0"/><path d="M47 113h32l12-21 16 42 13-25h53" stroke="#175D54" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="floating-note"><span class="floating-icon">✦</span><span>Oportunidades<br><b>verificadas</b></span></div></div>
         </section>
 
 
-        <section class="welcome-guide" aria-labelledby="welcome-title">
-          <div class="welcome-heading"><div><div class="minor-label">BEM-VINDA AO RADARMED</div><h2 id="welcome-title">Seu radar, do seu jeito.</h2><p>Um lugar para explorar concursos compatíveis com Medicina, comparar condições de trabalho e acompanhar as datas importantes.</p></div><span class="welcome-spark" aria-hidden="true">✦</span></div>
-          <details class="welcome-details" open>
-            <summary>Conheça o RadarMed em quatro passos <span class="welcome-chevron">⌄</span></summary>
-            <div class="welcome-steps">
-              <div class="welcome-step"><span class="step-num">01</span><strong>Encontre seu concurso</strong><p>Pesquise vagas no Paraná, em Santa Catarina e São Paulo. Filtre por estado, vínculo e vagas imediatas.</p></div>
-              <div class="welcome-step"><span class="step-num">02</span><strong>Confira os detalhes</strong><p>Veja salário, requisitos, prova, tipo de contrato e o link para o edital oficial. Confirme as retificações antes da inscrição.</p></div>
-              <div class="welcome-step"><span class="step-num">03</span><strong>Marque os favoritos</strong><p>Use a estrela para guardar oportunidades neste navegador. Os favoritos ainda não sincronizam entre celulares.</p></div>
-              <div class="welcome-step"><span class="step-num">04</span><strong>Organize suas datas</strong><p>Abra uma vaga e use “Adicionar à Agenda” para preparar um evento no Google Agenda. O salvamento automático ao favoritar está em desenvolvimento.</p></div>
-            </div>
-            <div class="welcome-actions"><button type="button" class="btn primary-btn" data-goto="opportunities">Ver concursos ↗</button><button type="button" class="btn secondary-btn" data-goto="calendar">Consultar prazos →</button></div>
-          </details>
-        </section>
-
         <section id="overview-section" class="view-section">
-          <div class="section-top"><div><div class="minor-label">RESUMO DO RADAR</div><h2>Panorama atual</h2></div><span class="muted" id="summary-date">Situação em 17/11/2026</span></div>
-          <div class="stats" id="stats"></div><section class="changes-panel" id="radarmed-changes" aria-label="Novidades desde a última revisão" aria-live="polite"><p>Conferindo histórico das atualizações…</p></section>
-          <div class="split-heading"><div><div class="minor-label">VALE OLHAR PRIMEIRO</div><h2>Oportunidades em destaque</h2></div><button class="text-link" type="button" data-goto="opportunities">Ver todas <span>↗</span></button></div>
+          <div class="split-heading">
+            <div><div class="minor-label">SELEÇÃO DA BASE PUBLICADA</div><h2>Oportunidades para Medicina</h2>
+              <p class="radar-ranking-note">Ordem automática: cargo médico, vaga imediata e prazo de inscrição. Localização só desempata; CR também permanece visível.</p></div>
+            <button class="text-link" type="button" data-goto="opportunities">Ver todas <span>↗</span></button>
+          </div>
           <div class="cards-grid" id="featured-cards"></div>
-          <div class="lower-grid"><section class="panel"><div class="panel-head"><div><div class="minor-label">ATENÇÃO AOS PRAZOS</div><h3>Encerrando em breve</h3></div><span class="small-chip">Próximos 7 dias</span></div><div id="upcoming-list" class="deadline-list"></div></section><section class="panel newsletter-panel"><div class="minor-label">FEITO COM CARINHO</div><h3>Um cantinho feito com amor. ❤️</h3><p>Vitória, criei este espaço pensando em você e nas conquistas que estão por vir. Quero estar ao seu lado, torcendo por cada passo. Te amo! — Nathan</p><div class="mini-schedule"><div><b>SEG</b><span>08h15</span></div><div class="schedule-arrow">↔</div><div><b>QUI</b><span>08h15</span></div></div><div class="note-under">O site mostra a última base publicada; a atualização automática dessa base ainda está em desenvolvimento.</div></section></div>
+          <div class="section-top radar-overview-stats-heading"><div><div class="minor-label">RESUMO DO RADAR</div><h2>Panorama atual</h2></div><span class="muted" id="summary-date">Situação em 17/11/2026</span></div>
+          <div class="stats" id="stats"></div>
+          <section class="changes-panel" id="radarmed-changes" aria-label="Novidades desde a última revisão" aria-live="polite"><p>Conferindo histórico das atualizações…</p></section>
+          <div class="lower-grid">
+            <section class="panel"><div class="panel-head"><div><div class="minor-label">ATENÇÃO AOS PRAZOS</div><h3>Outras inscrições encerrando em breve</h3></div><span class="small-chip">Próximos 7 dias</span></div><div id="upcoming-list" class="deadline-list"></div></section>
+            <section class="panel newsletter-panel"><div class="minor-label">FEITO COM CARINHO</div><h3>Um cantinho feito com amor. ❤️</h3><p>Vitória, criei este espaço pensando em você e nas conquistas que estão por vir. Quero estar ao seu lado, torcendo por cada passo. Te amo! — Nathan</p><div class="mini-schedule"><div><b>SEG</b><span>08h15</span></div><div class="schedule-arrow">↔</div><div><b>QUI</b><span>08h15</span></div></div><div class="note-under">O site mostra a última base publicada; a atualização automática dessa base ainda está em desenvolvimento.</div></section>
+          </div>
         </section>
 
         <section id="opportunities-section" class="view-section hidden">
           <div class="section-top"><div><div class="minor-label">EDITAIS SELECIONADOS</div><h2>Todas as oportunidades</h2></div><button class="btn secondary-btn" type="button" id="download-csv">↓ Exportar CSV</button></div>
           <div class="filters-panel"><label class="search-wrap"><span class="search-ico">⌕</span><input id="search-input" placeholder="Buscar órgão, cargo ou cidade..." autocomplete="off" aria-label="Buscar oportunidades"><kbd>BUSCAR</kbd></label>
-            <div class="filter-row"><div class="pills" id="uf-filters" role="group" aria-label="Estado"><button class="pill active" data-uf="ALL">Todos</button><button class="pill" data-uf="PR">Paraná</button><button class="pill" data-uf="SC">Santa Catarina</button><button class="pill" data-uf="SP">São Paulo</button></div><div class="filter-selectors"><select id="bond-filter" aria-label="Filtrar tipo de vínculo"><option value="ALL">Todos os vínculos</option><option value="Efetivo/estatutário">Efetivo/estatutário</option><option value="Temporário/PSS">Temporário/PSS</option><option value="Emprego público/CLT">Emprego público/CLT</option><option value="Militar temporário">Militar temporário</option></select><select id="sort-filter" aria-label="Ordenar vagas"><option value="priority">Prioridade regional</option><option value="deadline">Prazo mais próximo</option><option value="salary">Maior salário</option><option value="immediate">Mais vagas imediatas</option></select></div></div>
+            <div class="filter-row"><div class="pills" id="uf-filters" role="group" aria-label="Estado"><button class="pill active" data-uf="ALL">Todos</button><button class="pill" data-uf="PR">Paraná</button><button class="pill" data-uf="SC">Santa Catarina</button><button class="pill" data-uf="SP">São Paulo</button></div><div class="filter-selectors"><select id="bond-filter" aria-label="Filtrar tipo de vínculo"><option value="ALL">Todos os vínculos</option><option value="Efetivo/estatutário">Efetivo/estatutário</option><option value="Temporário/PSS">Temporário/PSS</option><option value="Emprego público/CLT">Emprego público/CLT</option><option value="Militar temporário">Militar temporário</option></select><select id="sort-filter" aria-label="Ordenar vagas"><option value="priority">Relevância para Medicina</option><option value="deadline">Prazo mais próximo</option><option value="salary">Maior salário</option><option value="immediate">Mais vagas imediatas</option></select></div></div>
             <div class="filter-bottom"><label class="switch-line"><input type="checkbox" id="immediate-only"><span class="switch-ui"></span><span>Somente vagas imediatas</span></label><span id="results-label" class="muted">0 oportunidades</span></div></div>
           <div class="cards-grid" id="all-cards"></div><div class="empty-state hidden" id="empty-results"><div>⌕</div><h3>Nenhuma oportunidade encontrada</h3><p>Tente outro estado, termo ou tipo de vínculo.</p><button type="button" class="btn secondary-btn" id="clear-filters">Limpar filtros</button></div>
         </section>
 
         <section id="calendar-section" class="view-section hidden"><div class="section-top"><div><div class="minor-label">ORGANIZE AS INSCRIÇÕES</div><h2>Calendário de prazos</h2></div></div><p class="intro-text">Os prazos e as provas são agrupados por data. As inscrições próximas do encerramento recebem destaque automático.</p><div class="timeline" id="timeline"></div></section>
 
-        <section id="favorites-section" class="view-section hidden"><div class="section-top"><div><div class="minor-label">SUA LISTA PESSOAL</div><h2>Oportunidades salvas</h2></div></div><p class="intro-text">Use a estrela nos cartões para guardar oportunidades neste navegador. Abra os detalhes para adicionar prazos ao Google Agenda manualmente. Favoritar não cria inscrição nem compromisso automaticamente. Ao abrir o Prisma pelo botão abaixo, você poderá trazer os salvos para a mesma conta e escolher quais concursos estudar.</p><p class="sync-status" id="radarmed-account-status" role="status">Preparando recurso de sincronização…</p><a href="https://osce-vitoria-piloto.onrender.com/dashboard.html" class="btn secondary-btn radar-sync-action">✦ Ver meus favoritos no Prisma ↗</a><div class="cards-grid" id="saved-cards"></div><div class="empty-state" id="empty-saved"><div>☆</div><h3>Nenhuma oportunidade salva</h3><p>Explore as oportunidades e clique na estrela das que interessarem.</p><button type="button" class="btn secondary-btn" data-goto="opportunities">Explorar vagas</button></div></section>
+        <section id="favorites-section" class="view-section hidden"><div class="section-top"><div><div class="minor-label">SUA LISTA PESSOAL</div><h2>Oportunidades salvas</h2></div></div><p class="intro-text">Use a estrela para salvar oportunidades neste navegador. A inclusão de prazos no Google Agenda é manual. Favoritar não cria inscrição nem compromisso; a integração entre contas depende de autenticação e sincronização habilitadas.</p><p class="sync-status" id="radarmed-account-status" role="status">Preparando recurso de sincronização…</p><div class="cards-grid" id="saved-cards"></div><div class="empty-state" id="empty-saved"><div>☆</div><h3>Nenhuma oportunidade salva</h3><p>Explore as oportunidades e clique na estrela das que interessarem.</p><button type="button" class="btn secondary-btn" data-goto="opportunities">Explorar vagas</button></div></section>
 
         <footer><span>RadarMed • Uma ferramenta do <a href="https://osce-vitoria-piloto.onrender.com/dashboard.html">Prisma</a></span><span>Base revisada em <b id="data-updated-footer">17/11/2026</b> · Sempre confirme o edital oficial.</span></footer>
       </main>
@@ -194,7 +241,15 @@
     return {value:`Até ${shortDate(v.inscricoes_ate)}`,cls:'ok'};
   };
   const offer = (v) => v.imediatas > 0 ? `${num(v.imediatas)} imediata${v.imediatas>1?'s':''}${v.cadastro_reserva?' + CR':''}` : 'Somente CR';
-  const prioritySort = (a,b) => areaRank(a)-areaRank(b) || Number(b.imediatas>0)-Number(a.imediatas>0) || daysBetween(a.inscricoes_ate)-daysBetween(b.inscricoes_ate);
+  // Criterio publico: aderencia direta a Medicina, vagas imediatas, urgencia e so depois local.
+  // Nao e recomendacao individual, pois ainda nao le preferencias da estudante.
+  const isMedicalRole = v => String(v.area||'').toLocaleLowerCase('pt-BR').includes('medicina');
+  const prioritySort = (a,b) =>
+    Number(isMedicalRole(b))-Number(isMedicalRole(a)) ||
+    Number(b.imediatas>0)-Number(a.imediatas>0) ||
+    Number(daysBetween(a.inscricoes_ate)>7)-Number(daysBetween(b.inscricoes_ate)>7) ||
+    daysBetween(a.inscricoes_ate)-daysBetween(b.inscricoes_ate) ||
+    areaRank(a)-areaRank(b) || (b.salario??0)-(a.salario??0);
   function sortVagas(list) {
     return [...list].sort((a,b)=>{
       if(state.sort==='salary') return (b.salario??0)-(a.salario??0) || prioritySort(a,b);
@@ -231,10 +286,11 @@
   function drawOverview(){
     drawStats();
     const open = state.vagas.filter(isOpen).sort(prioritySort);
-    const selected = open.filter(v=>v.imediatas>0).slice(0,4);
-    $('#featured-cards').innerHTML = selected.map(card).join('') || '<p class="muted">Nenhuma vaga imediata na base publicada.</p>';
-    const soon = open.filter(v=>daysBetween(v.inscricoes_ate)<=7).sort((a,b)=>daysBetween(a.inscricoes_ate)-daysBetween(b.inscricoes_ate)).slice(0,5);
-    $('#upcoming-list').innerHTML = soon.length ? soon.map(v=>`<div class="deadline-item"><div class="calendar-datebox"><b>${v.inscricoes_ate.slice(8)}</b><span>${monthAbbrev(v.inscricoes_ate)}</span></div><div class="deadline-text"><strong>${esc(v.cargo)}</strong><span>${esc(v.cidade)} / ${esc(v.uf)} · ${esc(v.orgao)}</span></div><span class="deadline-label">${esc(statusText(v).value)}</span></div>`).join('') : '<p class="muted" style="line-height:1.7;margin-top:20px">Nenhuma inscrição encerra nos próximos 7 dias.</p>';
+    const selected = open.slice(0,4);
+    const featuredIds = new Set(selected.map(v=>v.id));
+    $('#featured-cards').innerHTML = selected.map(card).join('') || '<p class="muted">Nenhuma inscrição aberta na base publicada.</p>';
+    const soon = open.filter(v=>daysBetween(v.inscricoes_ate)<=7 && !featuredIds.has(v.id)).sort((a,b)=>daysBetween(a.inscricoes_ate)-daysBetween(b.inscricoes_ate)).slice(0,5);
+    $('#upcoming-list').innerHTML = soon.length ? soon.map(v=>`<div class="deadline-item"><div class="calendar-datebox"><b>${v.inscricoes_ate.slice(8)}</b><span>${monthAbbrev(v.inscricoes_ate)}</span></div><div class="deadline-text"><strong>${esc(v.cargo)}</strong><span>${esc(v.cidade)} / ${esc(v.uf)} · ${esc(v.orgao)}</span></div><span class="deadline-label">${esc(statusText(v).value)}</span></div>`).join('') : '<p class="muted" style="line-height:1.7;margin-top:20px">Nenhuma outra inscrição encerra nos próximos 7 dias.</p>';
   }
   function filtered(){
     return sortVagas(state.vagas.filter(v=>isOpen(v) && (state.uf==='ALL'||v.uf===state.uf) && (state.bond==='ALL'||v.tipo_vinculo===state.bond) && (!state.immediate||v.imediatas>0) && `${v.cargo} ${v.cargo_completo} ${v.orgao} ${v.cidade} ${v.uf} ${v.area}`.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(state.search.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase())));
@@ -255,7 +311,6 @@
   function setView(view){
     state.view=view;
     ['overview','opportunities','calendar','favorites'].forEach(k=>{$(`#${k}-section`).classList.toggle('hidden',view!==k);});
-    const guide=$('.welcome-guide');if(guide)guide.classList.toggle('hidden',view!=='overview');
     $('#hero').classList.toggle('hidden',view!=='overview');
     $$('[data-view]').forEach(btn=>{btn.classList.toggle('active',btn.dataset.view===view);btn.setAttribute('aria-current',btn.dataset.view===view?'page':'false');});
     $('#page-crumb').textContent=({overview:'Visão geral',opportunities:'Oportunidades',calendar:'Prazos e provas',favorites:'Salvos'})[view];
