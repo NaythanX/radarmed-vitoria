@@ -15,6 +15,9 @@
       target.textContent = "O histórico das novidades ainda está sendo atualizado.";
       return;
     }
+    const updateRecent = () => window.RadarMedBridge?.setRecent?.(changes.novos || []);
+    if (window.RadarMedBridge?.isReady?.()) updateRecent();
+    else window.addEventListener("radarmed:ready", updateRecent, { once: true });
     const summary = changes.resumo || {};
     const ids = [...(changes.novos || []), ...(changes.retificados || [])];
     const rows = ids.map(id => base.vagas.find(v => v.id === id)).filter(Boolean);
