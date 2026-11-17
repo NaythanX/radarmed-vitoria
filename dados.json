@@ -1,7 +1,7 @@
 {
   "titulo": "Radar de Concursos | Vitória",
   "atualizado_em": "2026-11-17",
-  "observacao": "Base inicial conferida em 17/11/2026. O site não consulta editais em tempo real. Confirme retificações e requisitos na página oficial antes de se inscrever.",
+  "observacao": "Base inicial conferida em 17/11/2026. O site não consulta editais em tempo real. Confirme retificações e requisitos na página oficial antes de se inscrever. O histórico de mudanças é calculado automaticamente quando a base é modificada.",
   "vagas": [
     {
       "id": "ms-analista-pr",
