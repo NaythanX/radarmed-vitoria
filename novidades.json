@@ -1,12 +1,17 @@
 {
   "atualizado_em": "2026-11-17",
   "comparado_com": "2026-11-17",
-  "novos": [],
+  "novos": [
+    "navegantes-clinico-20",
+    "navegantes-clinico-30",
+    "navegantes-clinico-40",
+    "navegantes-esf-40"
+  ],
   "retificados": [],
   "retirados": [],
-  "total_publicado": 9,
+  "total_publicado": 13,
   "resumo": {
-    "novos": 0,
+    "novos": 4,
     "retificados": 0,
     "retirados": 0
   }
