@@ -37,6 +37,7 @@
 .topbar-right .horizon-portal{display:inline-flex;align-items:center;gap:6px;min-height:34px;border-radius:9px;background:#e4f4e9;padding:7px 11px;color:#17644b;text-decoration:none;font-size:12px;font-weight:780;white-space:nowrap}
 .topbar-right .horizon-portal:hover{background:#d4ebdd}
 @media(max-width:760px){.topbar-right .horizon-portal{padding:7px 9px;font-size:11px}}
+.radar-sync-action{display:inline-flex;margin:7px 0 23px;text-decoration:none}
 </style>
 </head>
 <body>
@@ -101,7 +102,7 @@
 
         <section id="calendar-section" class="view-section hidden"><div class="section-top"><div><div class="minor-label">ORGANIZE AS INSCRIÇÕES</div><h2>Calendário de prazos</h2></div></div><p class="intro-text">Os prazos e as provas são agrupados por data. As inscrições próximas do encerramento recebem destaque automático.</p><div class="timeline" id="timeline"></div></section>
 
-        <section id="favorites-section" class="view-section hidden"><div class="section-top"><div><div class="minor-label">SUA LISTA PESSOAL</div><h2>Oportunidades salvas</h2></div></div><p class="intro-text">Use a estrela nos cartões para guardar oportunidades neste navegador. Abra os detalhes para adicionar prazos ao Google Agenda manualmente. A sincronização automática dos favoritos com o calendário ainda não está ativa.</p><p class="sync-status" id="radarmed-account-status" role="status">Preparando recurso de sincronização…</p><div class="cards-grid" id="saved-cards"></div><div class="empty-state" id="empty-saved"><div>☆</div><h3>Nenhuma oportunidade salva</h3><p>Explore as oportunidades e clique na estrela das que interessarem.</p><button type="button" class="btn secondary-btn" data-goto="opportunities">Explorar vagas</button></div></section>
+        <section id="favorites-section" class="view-section hidden"><div class="section-top"><div><div class="minor-label">SUA LISTA PESSOAL</div><h2>Oportunidades salvas</h2></div></div><p class="intro-text">Use a estrela nos cartões para guardar oportunidades neste navegador. Abra os detalhes para adicionar prazos ao Google Agenda manualmente. Favoritar não cria inscrição nem compromisso automaticamente. Ao abrir o Prisma pelo botão abaixo, você poderá trazer os salvos para a mesma conta e escolher quais concursos estudar.</p><p class="sync-status" id="radarmed-account-status" role="status">Preparando recurso de sincronização…</p><a href="https://osce-vitoria-piloto.onrender.com/dashboard.html" class="btn secondary-btn radar-sync-action">✦ Ver meus favoritos no Prisma ↗</a><div class="cards-grid" id="saved-cards"></div><div class="empty-state" id="empty-saved"><div>☆</div><h3>Nenhuma oportunidade salva</h3><p>Explore as oportunidades e clique na estrela das que interessarem.</p><button type="button" class="btn secondary-btn" data-goto="opportunities">Explorar vagas</button></div></section>
 
         <footer><span>RadarMed • Uma ferramenta do <a href="https://osce-vitoria-piloto.onrender.com/dashboard.html">Prisma</a></span><span>Base revisada em <b id="data-updated-footer">17/11/2026</b> · Sempre confirme o edital oficial.</span></footer>
       </main>
