@@ -237,6 +237,8 @@
   function toggleFav(id){if(favs.has(id)){favs.delete(id);toast('Removida dos salvos');}else{favs.add(id);toast('Oportunidade salva neste navegador');}saveFavs();drawFavorites();if(state.view==='overview')drawOverview();if(state.view==='opportunities')drawOpportunities();if(state.detail===id)$('#dialog-save').textContent=favs.has(id)?'★ Remover dos salvos':'☆ Salvar vaga';window.dispatchEvent(new CustomEvent('radarmed:favorite',{detail:{id,saved:favs.has(id)}}));}
   window.RadarMedBridge={
     getFavorites:()=>[...favs],
+    isReady:()=>Boolean(state.db),
+    setRecent:(ids)=>{if(!state.db)return;const news=new Set(ids);state.vagas.forEach(v=>v.novo=news.has(v.id));drawOverview();if(state.view==='opportunities')drawOpportunities();},
     replaceFavorites:(ids)=>{favs=new Set((Array.isArray(ids)?ids:[]).filter(x=>typeof x==='string'&&x.length<=200));saveFavs();drawFavorites();if(state.view==='overview')drawOverview();if(state.view==='opportunities')drawOpportunities();if(state.detail)$('#dialog-save').textContent=favs.has(state.detail)?'★ Remover dos salvos':'☆ Salvar vaga';}
   };
   function downloadCSV(){
