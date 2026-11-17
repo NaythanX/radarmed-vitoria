@@ -1,0 +1,990 @@
+{
+  "atualizado_em": "2026-11-17",
+  "origem": "PCI Concursos — plugin conectado ao ChatGPT",
+  "aviso": "Pistas de editais (não são inscrições validadas). O site RadarMed só inclui como vagas confirmadas os registros de dados.json, após conferir banca e edital oficial. O plugin PCI não é consultado em tempo real pelo navegador.",
+  "meta": {
+    "por_busca": [
+      {
+        "uf": "PR",
+        "resultados": 4
+      },
+      {
+        "uf": "SC",
+        "resultados": 23
+      },
+      {
+        "uf": "SP",
+        "resultados": 28
+      }
+    ],
+    "editais_unicos_encontrados": 53,
+    "pendentes_genericos": 9,
+    "ja_publicados_no_radar": 13,
+    "especialidade_ou_incompatibilidade": 30
+  },
+  "candidatos": [
+    {
+      "pci_id": 296127,
+      "orgao": "Prefeitura de Bom Retiro",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO"
+      ],
+      "cargos_genericos": [
+        "MÉDICO"
+      ],
+      "inscricoes_inicio": "2026-10-23",
+      "inscricoes_ate": "2026-11-23",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-bom-retiro-sc-abre-concurso-publico-com-salarios-de-ate-20138",
+      "fonte": "PCI Concursos",
+      "situacao": "aguardando_validacao_oficial"
+    },
+    {
+      "pci_id": 296319,
+      "orgao": "Prefeitura de Nova Trento",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO"
+      ],
+      "cargos_genericos": [
+        "MÉDICO"
+      ],
+      "inscricoes_inicio": "2026-10-30",
+      "inscricoes_ate": "2026-11-28",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/municipio-de-nova-trento-sc-abre-tres-novos-processos-seletivos-com-salarios-de-ate-14189",
+      "fonte": "PCI Concursos",
+      "situacao": "aguardando_validacao_oficial"
+    },
+    {
+      "pci_id": 296113,
+      "orgao": "Prefeitura de Santa Terezinha do Progresso",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO"
+      ],
+      "cargos_genericos": [
+        "MÉDICO"
+      ],
+      "inscricoes_inicio": "2026-10-26",
+      "inscricoes_ate": "2026-11-25",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-terezinha-do-progresso-sc-abre-concurso-com-salarios-de-ate-10000",
+      "fonte": "PCI Concursos",
+      "situacao": "aguardando_validacao_oficial"
+    },
+    {
+      "pci_id": 296373,
+      "orgao": "Prefeitura da Estância Turística de Guaratinguetá",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO - CARDIOLOGIA",
+        "MÉDICO - CIRURGIA PEDIÁTRICA",
+        "MÉDICO - CIRURGIA VASCULAR",
+        "MÉDICO - CLÍNICA GERAL",
+        "MÉDICO - COLOPROCTOLOGIA",
+        "MÉDICO - DERMATOLOGIA",
+        "MÉDICO - GASTROENTEROLOGIA",
+        "MÉDICO - GERIATRIA",
+        "MÉDICO - GINECOLOGIA/OBSTETRÍCIA",
+        "MÉDICO - INFECTOLOGIA",
+        "MÉDICO - NEUROLOGIA",
+        "MÉDICO - NEUROLOGIA PEDIÁTRICA"
+      ],
+      "cargos_genericos": [
+        "MÉDICO DE SAÚDE DA FAMÍLIA"
+      ],
+      "inscricoes_inicio": "2026-11-16",
+      "inscricoes_ate": "2026-12-15",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaratingueta-sp-abre-concurso-publico-com-salarios-de-ate-18540",
+      "fonte": "PCI Concursos",
+      "situacao": "aguardando_validacao_oficial"
+    },
+    {
+      "pci_id": 296365,
+      "orgao": "Prefeitura de Iaras",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO"
+      ],
+      "cargos_genericos": [
+        "MÉDICO"
+      ],
+      "inscricoes_inicio": "2026-11-04",
+      "inscricoes_ate": "2026-11-17",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-iaras-sp-abre-concurso-publico-e-processo-seletivo",
+      "fonte": "PCI Concursos",
+      "situacao": "aguardando_validacao_oficial"
+    },
+    {
+      "pci_id": 296613,
+      "orgao": "Prefeitura de Inúbia Paulista",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO"
+      ],
+      "cargos_genericos": [
+        "MÉDICO"
+      ],
+      "inscricoes_inicio": "2026-11-16",
+      "inscricoes_ate": "2026-12-16",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-inubia-paulista-sp-abre-concurso-publico-e-processo-seletivo-para-diversos-cargos",
+      "fonte": "PCI Concursos",
+      "situacao": "aguardando_validacao_oficial"
+    },
+    {
+      "pci_id": 296465,
+      "orgao": "Prefeitura de Jandira",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO - CARDIOLOGIA",
+        "MÉDICO - COLPOCOPISTA",
+        "MÉDICO - DERMATOLOGIA",
+        "MÉDICO - ENDOCRINOLOGIA",
+        "MÉDICO - GASTROENTEROLOGIA",
+        "MÉDICO - GINECOLOGIA",
+        "MÉDICO - MASTOLOGIA",
+        "MÉDICO - MEDICINA DO TRABALHO",
+        "MÉDICO - NEUROLOGISTA ADULTO",
+        "MÉDICO - NEUROLOGISTA PEDIÁTRICO",
+        "MÉDICO - OFTALMOLOGIA",
+        "MÉDICO - ORTOPEDIA"
+      ],
+      "cargos_genericos": [
+        "MÉDICO CLÍNICO GERAL"
+      ],
+      "inscricoes_inicio": "2026-11-16",
+      "inscricoes_ate": "2027-01-04",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jandira-sp-abre-tres-concursos-publicos-para-diversos-cargos",
+      "fonte": "PCI Concursos",
+      "situacao": "aguardando_validacao_oficial"
+    },
+    {
+      "pci_id": 296497,
+      "orgao": "Prefeitura de Patrocínio Paulista",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO"
+      ],
+      "cargos_genericos": [
+        "MÉDICO"
+      ],
+      "inscricoes_inicio": "2026-11-10",
+      "inscricoes_ate": "2026-12-09",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-patrocinio-paulista-sp-divulga-editais-de-concurso-publico-e-processo-seletivo",
+      "fonte": "PCI Concursos",
+      "situacao": "aguardando_validacao_oficial"
+    },
+    {
+      "pci_id": 296561,
+      "orgao": "Prefeitura de Tapiraí",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO",
+        "MÉDICO - GINECOLOGISTA"
+      ],
+      "cargos_genericos": [
+        "MÉDICO"
+      ],
+      "inscricoes_inicio": "2026-11-11",
+      "inscricoes_ate": "2026-12-14",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tapirai-sp-abre-concurso-publico-com-salarios-de-ate-7991",
+      "fonte": "PCI Concursos",
+      "situacao": "aguardando_validacao_oficial"
+    },
+    {
+      "pci_id": 296422,
+      "orgao": "EBSERH - Empresa Brasileira de Serviços Hospitalares",
+      "uf": "Nacional",
+      "cargos_resumo": [
+        "MÉDICO - ANESTESIOLOGIA",
+        "MÉDICO - CARDIOLOGIA",
+        "MÉDICO - CIRURGIA DO APARELHO DIGESTIVO",
+        "MÉDICO - CIRURGIA GERAL",
+        "MÉDICO - CIRURGIA ONCOLÓGICA",
+        "MÉDICO - CIRURGIA PEDIÁTRICA",
+        "MÉDICO - CIRURGIA PLÁSTICA",
+        "MÉDICO - CIRURGIA TORÁCICA",
+        "MÉDICO - CIRURGIA VASCULAR",
+        "MÉDICO - CLÍNICA MÉDICA",
+        "MÉDICO - COLOPROCTOLOGIA",
+        "MÉDICO - ENDOCRINOLOGIA E METABOLOGIA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-04",
+      "inscricoes_ate": "2026-11-18",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/ebserh-brasil-processo-seletivo-oferece-vagas-para-medicos-em-diversas-especialidades",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296406,
+      "orgao": "Prefeitura de Entre Rios do Oeste",
+      "uf": "PR",
+      "cargos_resumo": [
+        "MÉDICO - GINECOLOGIA",
+        "MÉDICO - PEDIATRIA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-06",
+      "inscricoes_ate": "2026-11-17",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-entre-rios-do-oeste-pr-abre-processo-seletivo-para-cargos-de-nivel-superior",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296056,
+      "orgao": "Prefeitura de Quedas do Iguaçu",
+      "uf": "PR",
+      "cargos_resumo": [
+        "MÉDICO - GINECOLOGISTA E OBSTETRA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-10-24",
+      "inscricoes_ate": "2026-11-25",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-quedas-do-iguacu-pr-retifica-edital-de-concurso-publico",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296693,
+      "orgao": "CIM-AMFRI - Consórcio Intermunicipal Multifinalitário da Região da AMFRI",
+      "uf": "SC",
+      "cargos_resumo": [],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-16",
+      "inscricoes_ate": "2026-12-18",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/cim-amfri-sc-abre-processo-seletivo-para-profissionais-de-nivel-superior",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296395,
+      "orgao": "IMA - Instituto do Meio Ambiente do Estado de Santa Catarina",
+      "uf": "SC",
+      "cargos_resumo": [],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-13",
+      "inscricoes_ate": "2026-12-14",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/ima-sc-abre-concurso-publico-com-salarios-de-ate-12300",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296486,
+      "orgao": "Prefeitura de Faxinal dos Guedes",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO - ESPECIALISTA EM ENDOCRINOLOGIA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-07",
+      "inscricoes_ate": "2026-12-07",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-faxinal-dos-guedes-sc-abre-concurso-publico-e-processo-seletivo-com-salarios-de-ate-7454",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296459,
+      "orgao": "Prefeitura de Ibirama",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO - CLÍNICA GERAL",
+        "MÉDICO - PEDIATRIA",
+        "MÉDICO - PSIQUIATRA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-06",
+      "inscricoes_ate": "2026-11-29",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ibirama-sc-abre-concurso-publico-com-salarios-de-ate-20364",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296083,
+      "orgao": "Prefeitura de Luiz Alves",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO - ESPECIALISTA EM SAÚDE MENTAL",
+        "MÉDICO - GINECOLOGISTA/OBSTETRA",
+        "MÉDICO - PEDIATRIA",
+        "MÉDICO AUDITOR"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-10-27",
+      "inscricoes_ate": "2026-11-23",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-luiz-alves-sc-abre-concurso-publico-com-salarios-de-ate-8889",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296333,
+      "orgao": "Prefeitura de Luzerna",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO - PEDIATRIA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-03",
+      "inscricoes_ate": "2026-12-03",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-luzerna-sc-abre-concurso-publico-com-salarios-de-ate-14004",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296201,
+      "orgao": "Prefeitura de Praia Grande e Fundo Municipal de Saúde",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO - GINECOLOGIA",
+        "MÉDICO - PEDIATRIA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-10-27",
+      "inscricoes_ate": "2026-11-22",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-praia-grande-sc-abre-selecoes-com-salarios-de-ate-7921",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296623,
+      "orgao": "Prefeitura de São Miguel do Oeste",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO - GINECOLOGISTA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-18",
+      "inscricoes_ate": "2026-12-07",
+      "inscricoes_abertas": false,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-miguel-do-oeste-sc-abre-selecao-para-cadastro-de-reserva-em-diversas-areas",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296605,
+      "orgao": "Prefeitura do Município de Curitibanos",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO - PEDIATRIA (20H)",
+        "MÉDICO - PSIQUIATRIA 10H",
+        "MÉDICO - PSIQUIATRIA 20H"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-16",
+      "inscricoes_ate": "2026-12-16",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-curitibanos-sc-abre-concurso-publico-com-salarios-de-ate-13096",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296644,
+      "orgao": "SES - Secretaria de Estado da Saúde de Santa Catarina",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO - CARDIOLOGIA",
+        "MÉDICO - ENDOSCOPIA DIGESTIVA",
+        "MÉDICO - GINECOLOGIA E OBSTETRÍCIA",
+        "MÉDICO - MEDICINA DE EMERGÊNCIA",
+        "MÉDICO - NEFROLOGIA",
+        "MÉDICO - PNEUMOLOGIA",
+        "MÉDICO - RADIOLOGIA E DIAGNÓSTICO POR IMAGEM"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-12",
+      "inscricoes_ate": "2026-11-26",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/ses-sc-abre-selecao-para-profissionais-de-saude-em-joinville",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296423,
+      "orgao": "FAMESP - Fundação para o Desenvolvimento Médico e Hospitalar",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO - ENDOCRINOLOGIA ADULTO",
+        "MÉDICO - ENDOCRINOLOGIA PEDIÁTRICA",
+        "MÉDICO - GINECOLOGISTA E OBSTETRA",
+        "MÉDICO - NEUROLOGISTA ADULTO",
+        "MÉDICO - NEUROLOGISTA PEDIÁTRICO",
+        "MÉDICO - OFTALMOLOGISTA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-09",
+      "inscricoes_ate": "2026-11-18",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/famesp-sp-abre-processos-seletivos-para-diversas-areas-em-bauru",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296401,
+      "orgao": "HCFMRP - Hospital das Clínicas da Faculdade de Medicina de Ribeirão Preto da Universidade de São Paulo",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO - ALERGIA E IMUNOLOGIA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-09",
+      "inscricoes_ate": "2026-11-27",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-abre-concurso-publico-para-medico-na-area-de-alergia-e-imunologia",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296334,
+      "orgao": "HCFMRP-USP - Hospital das Clínicas da Faculdade de Medicina de Ribeirão Preto da Universidade de São Paulo",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO - CIRURGIA DE CABEÇA E PESCOÇO",
+        "MÉDICO - CLINICA CIRÚRGICA",
+        "MÉDICO FISIATRA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-09",
+      "inscricoes_ate": "2026-11-27",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-abre-tres-concursos-publicos-para-medicos",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296057,
+      "orgao": "Prefeitura de Birigui",
+      "uf": "SP",
+      "cargos_resumo": [],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-10-22",
+      "inscricoes_ate": "2026-12-10",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-birigui-sp-abre-concurso-publico-com-salarios-de-ate-13881",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296310,
+      "orgao": "Prefeitura de Cubatão",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO DO TRABALHO"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-10-29",
+      "inscricoes_ate": "2026-12-03",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-cubatao-sp-abre-concurso-publico-com-salarios-de-ate-5565",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296148,
+      "orgao": "Prefeitura de Cunha",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO - GINECOLOGIA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-10-23",
+      "inscricoes_ate": "2026-11-21",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-cunha-sp-abre-concurso-publico-com-salarios-de-ate-9147",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296496,
+      "orgao": "Prefeitura de Iperó",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO - GINECOLOGIA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-09",
+      "inscricoes_ate": "2026-11-19",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipero-sp-abre-concursos-publicos-e-processo-seletivo",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296139,
+      "orgao": "Prefeitura de Monteiro Lobato",
+      "uf": "SP",
+      "cargos_resumo": [],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-10-23",
+      "inscricoes_ate": "2026-11-23",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-monteiro-lobato-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296490,
+      "orgao": "Prefeitura de Pinhalzinho",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO - NEUROLOGISTA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-09",
+      "inscricoes_ate": "2026-11-29",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pinhalzinho-sp-abre-concurso-publico-com-salarios-de-ate-7723",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296584,
+      "orgao": "Prefeitura de Santana de Parnaíba",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO - ANGIOLOGIA",
+        "MÉDICO - CARDIOLOGIA",
+        "MÉDICO - CARDIOLOGIA PEDIÁTRICA",
+        "MÉDICO - COLPOSCOPIA",
+        "MÉDICO - ENDOCRINOLOGIA",
+        "MÉDICO - ENDOCRINOLOGIA PEDIÁTRICA",
+        "MÉDICO - GASTROENTEROLOGIA",
+        "MÉDICO - GERIATRIA",
+        "MÉDICO - GINECOLOGIA/OBSTETRÍCIA",
+        "MÉDICO - HEBIATRIA",
+        "MÉDICO - HEMATOLOGIA",
+        "MÉDICO - HEMATOLOGIA PEDIÁTRICA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-11",
+      "inscricoes_ate": "2026-11-23",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santana-de-parnaiba-sp-abre-selecao-para-medicos",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296094,
+      "orgao": "Prefeitura de São José da Bela Vista",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO DO TRABALHO"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-10-23",
+      "inscricoes_ate": "2026-12-03",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-prorroga-inscricoes-de-concurso-publico",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296165,
+      "orgao": "Prefeitura de Suzano",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO - GINECOLOGIA (10H)",
+        "MÉDICO - GINECOLOGIA (20H)",
+        "MÉDICO - NEUROLOGIA 10H",
+        "MÉDICO - NEUROLOGIA 20H",
+        "MÉDICO - PEDIATRIA (10H)",
+        "MÉDICO - PEDIATRIA (20H)",
+        "MÉDICO - PEDIATRIA PLANTONISTA 24H",
+        "MÉDICO - UROLOGIA 20H",
+        "MÉDICO DO TRABALHO 20H"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-10-29",
+      "inscricoes_ate": "2026-11-25",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-suzano-sp-abre-concurso-publico-com-salarios-de-ate-12062",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 295837,
+      "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
+      "uf": "SP",
+      "cargos_resumo": [
+        "PROFESSOR TITULAR - QUÍMICA MEDICINAL"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-10-26",
+      "inscricoes_ate": "2026-12-09",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-titular-em-sao-jose-do-rio-preto-sp",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296241,
+      "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
+      "uf": "SP",
+      "cargos_resumo": [
+        "PROFESSOR SUBSTITUTO - MEDICINA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-03",
+      "inscricoes_ate": "2026-11-17",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professores-substitutos-na-faculdade-de-medicina-de-botucatu-sp",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296269,
+      "orgao": "USCS - Universidade Municipal de São Caetano do Sul",
+      "uf": "SP",
+      "cargos_resumo": [
+        "PROFESSOR - CLÍNICA MÉDICA",
+        "PROFESSOR - GENÉTICA MÉDICA",
+        "PROFESSOR - MEDICINA DE EMERGÊNCIA",
+        "PROFESSOR - MEDICINA DE FAMÍLIA E COMUNIDADE",
+        "PROFESSOR - MEDICINA INTENSIVA",
+        "PROFESSOR - MEDICINA LEGAL E PERÍCIA MÉDICA",
+        "PROFESSOR - MEDICINA PALIATIVA",
+        "PROFESSOR - MEDICINA PREVENTIVA E SOCIAL"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-03",
+      "inscricoes_ate": "2026-11-17",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/uscs-sp-abre-concurso-para-professores-do-curso-de-medicina-em-itapetininga",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 295960,
+      "orgao": "USCS - Universidade Municipal de São Caetano do Sul, HFASP e Barueri",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO - CIRURGIA GERAL",
+        "MÉDICO - CLÍNICA MÉDICA",
+        "MÉDICO - DERMATOLOGIA",
+        "MÉDICO - GINECOLOGIA E OBSTETRÍCIA",
+        "MÉDICO - MEDICINA DE FAMÍLIA",
+        "MÉDICO - MEDICINA DE FAMÍLIA E COMUNIDADE",
+        "MÉDICO - PEDIATRIA",
+        "MÉDICO - PSIQUIATRIA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-10-19",
+      "inscricoes_ate": "2026-12-06",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/fauscs-sp-abre-selecao-para-residencia-medica-em-diversas-areas",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296106,
+      "orgao": "USP - Universidade de São Paulo",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO - PATOLOGIA PARA ATUAÇÃO EM ANATOMIA PATOLÓGICA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-12-01",
+      "inscricoes_ate": "2027-01-07",
+      "inscricoes_abertas": false,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/usp-sp-abre-10-novos-concursos-publicos-para-diversos-cargos",
+      "fonte": "PCI Concursos",
+      "situacao": "exigencia_de_especialidade_ou_incompatibilidade_a_verificar"
+    },
+    {
+      "pci_id": 296679,
+      "orgao": "Prefeitura de Catiguá",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO GENERALISTA"
+      ],
+      "cargos_genericos": [
+        "MÉDICO GENERALISTA"
+      ],
+      "inscricoes_inicio": "2026-11-30",
+      "inscricoes_ate": "2026-12-21",
+      "inscricoes_abertas": false,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-catigua-sp-abre-concurso-publico-com-salarios-de-ate-14750",
+      "fonte": "PCI Concursos",
+      "situacao": "inscricoes_futuras_ou_encerradas"
+    },
+    {
+      "pci_id": 296681,
+      "orgao": "Prefeitura de Umuarama",
+      "uf": "PR",
+      "cargos_resumo": [
+        "MÉDICO GENERALISTA 20H",
+        "MÉDICO GENERALISTA 40H"
+      ],
+      "cargos_genericos": [
+        "MÉDICO GENERALISTA 20H",
+        "MÉDICO GENERALISTA 40H"
+      ],
+      "inscricoes_inicio": "2026-11-14",
+      "inscricoes_ate": "2026-12-02",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-umuarama-pr-abre-concurso-publico-para-medicos-generalistas",
+      "fonte": "PCI Concursos",
+      "situacao": "publicado_na_base"
+    },
+    {
+      "pci_id": 296330,
+      "orgao": "Prefeitura de Agronômica",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO"
+      ],
+      "cargos_genericos": [
+        "MÉDICO"
+      ],
+      "inscricoes_inicio": "2026-11-04",
+      "inscricoes_ate": "2026-12-04",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-agronomica-sc-abre-concurso-publico-com-salarios-de-ate-19660",
+      "fonte": "PCI Concursos",
+      "situacao": "publicado_na_base"
+    },
+    {
+      "pci_id": 296678,
+      "orgao": "Prefeitura de Araranguá",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO",
+        "MÉDICO - PSIQUIATRIA",
+        "MÉDICO PSF"
+      ],
+      "cargos_genericos": [
+        "MÉDICO",
+        "MÉDICO PSF"
+      ],
+      "inscricoes_inicio": "2026-11-13",
+      "inscricoes_ate": "2026-12-06",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ararangua-sc-abre-processos-seletivos-para-diferentes-areas",
+      "fonte": "PCI Concursos",
+      "situacao": "publicado_na_base"
+    },
+    {
+      "pci_id": 296353,
+      "orgao": "Prefeitura de Fraiburgo",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO - GINECOLOGISTA/OBSTETRA",
+        "MÉDICO - PEDIATRA",
+        "MÉDICO - PSIQUIATRA",
+        "MÉDICO CLÍNICO GERAL",
+        "MÉDICO DE SAÚDE DA FAMÍLIA",
+        "MÉDICO DO TRABALHO"
+      ],
+      "cargos_genericos": [
+        "MÉDICO CLÍNICO GERAL",
+        "MÉDICO DE SAÚDE DA FAMÍLIA"
+      ],
+      "inscricoes_inicio": "2026-11-03",
+      "inscricoes_ate": "2026-12-02",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-fraiburgo-sc-abre-processo-seletivo-para-cadastro-de-reserva",
+      "fonte": "PCI Concursos",
+      "situacao": "publicado_na_base"
+    },
+    {
+      "pci_id": 296345,
+      "orgao": "Prefeitura de Guarujá do Sul",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO"
+      ],
+      "cargos_genericos": [
+        "MÉDICO"
+      ],
+      "inscricoes_inicio": "2026-11-03",
+      "inscricoes_ate": "2026-12-02",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaruja-do-sul-sc-abre-concurso-e-selecoes-com-salarios-de-ate-30-7-mil",
+      "fonte": "PCI Concursos",
+      "situacao": "publicado_na_base"
+    },
+    {
+      "pci_id": 296724,
+      "orgao": "Prefeitura de Pouso Redondo",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO"
+      ],
+      "cargos_genericos": [
+        "MÉDICO"
+      ],
+      "inscricoes_inicio": "2026-11-16",
+      "inscricoes_ate": "2026-11-26",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pouso-redondo-sc-abre-processo-seletivo-com-salarios-de-ate-21091",
+      "fonte": "PCI Concursos",
+      "situacao": "publicado_na_base"
+    },
+    {
+      "pci_id": 296616,
+      "orgao": "Prefeitura de Rio do Oeste",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO - CLÍNICA GERAL",
+        "MÉDICO - GINECOLOGIA E OBSTETRA",
+        "MÉDICO - PEDIATRIA"
+      ],
+      "cargos_genericos": [],
+      "inscricoes_inicio": "2026-11-12",
+      "inscricoes_ate": "2026-11-23",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-rio-do-oeste-sc-abre-processo-seletivo-com-salarios-de-ate-15337",
+      "fonte": "PCI Concursos",
+      "situacao": "publicado_na_base"
+    },
+    {
+      "pci_id": 296705,
+      "orgao": "Prefeitura de São Carlos",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO CLÍNICO GERAL"
+      ],
+      "cargos_genericos": [
+        "MÉDICO CLÍNICO GERAL"
+      ],
+      "inscricoes_inicio": "2026-11-16",
+      "inscricoes_ate": "2026-11-30",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-carlos-sc-abre-processos-seletivos-para-cadastro-de-reserva",
+      "fonte": "PCI Concursos",
+      "situacao": "publicado_na_base"
+    },
+    {
+      "pci_id": 296604,
+      "orgao": "Prefeitura do Município de Curitibanos",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO CLÍNICO GERAL - 20H",
+        "MÉDICO CLÍNICO GERAL - 40H"
+      ],
+      "cargos_genericos": [
+        "MÉDICO CLÍNICO GERAL - 20H",
+        "MÉDICO CLÍNICO GERAL - 40H"
+      ],
+      "inscricoes_inicio": "2026-11-11",
+      "inscricoes_ate": "2026-11-25",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-curitibanos-sc-abre-selecoes-com-salarios-de-ate-26193",
+      "fonte": "PCI Concursos",
+      "situacao": "publicado_na_base"
+    },
+    {
+      "pci_id": 296143,
+      "orgao": "Prefeitura e Fundação Cultural de Navegantes",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO - CLÍNICO GERAL 30H",
+        "MÉDICO - GINECOLOGIA (10H)",
+        "MÉDICO - GINECOLOGIA (20H)",
+        "MÉDICO - INFECTOLOGIA - 20H",
+        "MÉDICO - INFECTOLOGIA 10H",
+        "MÉDICO - MASTOLOGIA 10H",
+        "MÉDICO - NEUROLOGIA 10H",
+        "MÉDICO - NEUROLOGIA 20H",
+        "MÉDICO - ORTOPEDIA 10H",
+        "MÉDICO - ORTOPEDIA 20H",
+        "MÉDICO - PEDIATRIA (10H)",
+        "MÉDICO - PEDIATRIA (20H)"
+      ],
+      "cargos_genericos": [
+        "MÉDICO CLÍNICO GERAL - 20H",
+        "MÉDICO CLÍNICO GERAL - 40H",
+        "MÉDICO ESF 40H"
+      ],
+      "inscricoes_inicio": "2026-10-27",
+      "inscricoes_ate": "2026-11-25",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-e-fundacao-cultural-de-navegantes-sc-abrem-selecoes-com-salarios-de-ate-19199",
+      "fonte": "PCI Concursos",
+      "situacao": "publicado_na_base"
+    },
+    {
+      "pci_id": 296602,
+      "orgao": "Prefeitura de Corumbataí",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO PLANTONISTA",
+        "MÉDICO SAÚDE DA FAMÍLIA"
+      ],
+      "cargos_genericos": [
+        "MÉDICO PLANTONISTA",
+        "MÉDICO SAÚDE DA FAMÍLIA"
+      ],
+      "inscricoes_inicio": "2026-11-12",
+      "inscricoes_ate": "2026-11-26",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-corumbatai-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva",
+      "fonte": "PCI Concursos",
+      "situacao": "publicado_na_base"
+    },
+    {
+      "pci_id": 296256,
+      "orgao": "Prefeitura de Leme",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO - PSIQUIATRA",
+        "MÉDICO - SANITARISTA",
+        "MÉDICO DO TRABALHO",
+        "MÉDICO HORISTA",
+        "MÉDICO HORISTA - GINECOLOGISTA E OBSTETRA",
+        "MÉDICO HORISTA - OFTALMOLOGISTA",
+        "MÉDICO HORISTA - PSIQUIATRA INFANTIL"
+      ],
+      "cargos_genericos": [
+        "MÉDICO HORISTA",
+        "MÉDICO HORISTA - GINECOLOGISTA E OBSTETRA",
+        "MÉDICO HORISTA - OFTALMOLOGISTA",
+        "MÉDICO HORISTA - PSIQUIATRA INFANTIL"
+      ],
+      "inscricoes_inicio": "2026-10-30",
+      "inscricoes_ate": "2026-11-30",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-leme-sp-abre-concurso-publico-com-salarios-de-ate-13359",
+      "fonte": "PCI Concursos",
+      "situacao": "publicado_na_base"
+    },
+    {
+      "pci_id": 296680,
+      "orgao": "Prefeitura de Mogi Guaçu",
+      "uf": "SP",
+      "cargos_resumo": [
+        "MÉDICO - GINECOLOGIA",
+        "MÉDICO - PEDIATRIA",
+        "MÉDICO - PSIQUIATRIA",
+        "MÉDICO - TRABALHO",
+        "MÉDICO CLÍNICO GERAL"
+      ],
+      "cargos_genericos": [
+        "MÉDICO CLÍNICO GERAL"
+      ],
+      "inscricoes_inicio": "2026-11-14",
+      "inscricoes_ate": "2026-11-27",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-mogi-guacu-sp-abre-tres-novos-concursos-para-cadastro-de-reserva-em-diversas-areas",
+      "fonte": "PCI Concursos",
+      "situacao": "publicado_na_base"
+    }
+  ]
+}
