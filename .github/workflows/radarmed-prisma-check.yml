@@ -26,7 +26,7 @@ jobs:
           new Function(script);
           assert.match(html,/dialog-calendar-exam/);
           assert.match(html,/class="horizon-portal"/);
-          assert.match(html,/href="https:\/\/osce-vitoria-piloto.onrender.com\/radarmed\/"/);
+          assert.match(html,/href="https:\/\/prisma-v2-homologacao.onrender.com\/radarmed\/"/);
           assert.doesNotMatch(html,/<section class="radar-network-banner"|class="radar-sync-action"/);
           const fn=html.match(/function googleCalendarUrl\(v,kind='registration'\)\{([\s\S]*?)\n  \}/);
           assert.ok(fn);
