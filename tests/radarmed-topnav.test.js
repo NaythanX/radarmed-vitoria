@@ -20,7 +20,7 @@ test('RadarMed usa uma unica navegacao horizontal desktop/mobile', () => {
   assert.match(html,/id="nav-count"/);
 });
 test('Prisma fica em um único link destacado no cabeçalho, sem banner repetido',()=>{
-  assert.match(html,/<a class="horizon-portal" href="https:\/\/osce-vitoria-piloto.onrender.com\/radarmed\/"/);
+  assert.match(html,/<a class="horizon-portal" href="https:\/\/prisma-v2-homologacao.onrender.com\/radarmed\/"/);
   assert.doesNotMatch(html,/<section class="radar-network-banner"|<nav class="radar-network"/);
   assert.doesNotMatch(html,/<section class="welcome-guide"/);
 });
