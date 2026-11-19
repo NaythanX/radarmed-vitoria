@@ -18,9 +18,10 @@
       }
     ],
     "editais_unicos_encontrados": 62,
-    "pendentes_genericos": 10,
-    "ja_publicados_no_radar": 16,
-    "especialidade_ou_incompatibilidade": 29
+    "pendentes_genericos": 9,
+    "ja_publicados_no_radar": 17,
+    "especialidade_ou_incompatibilidade": 29,
+    "editais_atuais_nas_tres_buscas": 56
   },
   "candidatos": [
     {
@@ -306,7 +307,7 @@
       "inscricoes_abertas": true,
       "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-leme-sp-abre-concurso-publico-com-salarios-de-ate-13359",
       "fonte": "PCI Concursos",
-      "situacao": "aguardando_validacao_oficial"
+      "situacao": "publicado_na_base"
     },
     {
       "pci_id": 296269,
