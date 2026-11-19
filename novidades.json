@@ -1,26 +1,21 @@
 {
-  "atualizado_em": "2026-11-17",
+  "atualizado_em": "2026-11-19",
   "comparado_com": "2026-11-17",
-  "novos": [],
-  "retificados": [
-    "agronomica-medico",
-    "ararangua-medico-i",
-    "ararangua-medico-psf",
-    "corumbatai-plantonista",
-    "corumbatai-saude-familia",
-    "curitibanos-clinico-20",
-    "curitibanos-clinico-40",
-    "fraiburgo-clinico",
-    "fraiburgo-saude-familia",
-    "guaruja-do-sul-medico",
-    "mogi-guacu-clinico",
-    "sao-carlos-medico-clinico"
+  "novos": [
+    "bom-retiro-medico",
+    "coronel-freitas-20",
+    "coronel-freitas-40",
+    "coronel-freitas-familia",
+    "ibirama-clinico",
+    "palmital-clinico-20",
+    "palmital-clinico-40"
   ],
+  "retificados": [],
   "retirados": [],
-  "total_publicado": 26,
+  "total_publicado": 33,
   "resumo": {
-    "novos": 0,
-    "retificados": 12,
+    "novos": 7,
+    "retificados": 0,
     "retirados": 0
   }
 }
