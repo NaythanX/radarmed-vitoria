@@ -1,6 +1,6 @@
 # RadarMed — Quadro central de pesquisa e publicação
 
-**Atualizado:** 2026-11-17 (revisão com plugin PCI). Este é o quadro de handoff entre as conversas de um projeto ChatGPT e a automação semanal. Não é fonte de edital: confirme no órgão/banca.
+**Atualizado:** 2026-11-19 (auditoria e publicação incremental). Este é o quadro de handoff entre as conversas de um projeto ChatGPT e a automação semanal. Não é fonte de edital: confirme no órgão/banca.
 
 ## Fontes de verdade
 - Base pública: [dados.json](../dados.json) (branch main) e [site RadarMed](https://radarmed-vitoria.onrender.com).
@@ -13,7 +13,7 @@
 | Eixo | Estado em 17/11/2026 | Próximo trabalho |
 |---|---|---|
 | Cobertura PR/SC/SP | **Parcial**, não exaustiva | Cruzar múltiplas buscas PCI, bancas e municípios |
-| Registros em dados.json | **26 cargos/jornadas** na revisão atual; conferir SHA e contagem antes de alterar | Recontar **editais** e **cargos/jornadas**, separadamente |
+| Registros em dados.json | **33 cargos/jornadas** na revisão atual; conferir SHA e contagem antes de alterar | Recontar **editais** e **cargos/jornadas**, separadamente |
 | Falsos positivos PCI | Ocorrência de Médico Veterinário nas buscas por “médico” | Triagem profissional e exigência de RQE |
 | Navegantes (SC) | 4 cargos/jornadas registrados com fonte FURB | Monitorar retificações e prazo 25/11/2026 |
 | Pouso Redondo (SC) | Médico registrado após validação inicial SC Treinamentos | Monitorar retificações e prazo 26/11/2026 |
@@ -39,6 +39,7 @@
 |---|---|---|---:|---:|---:|---:|---|
 | 17/11/2026 | Auditoria inicial | SC e revisão parcial PR/SP | — | 5 registros de cargo/jornada | 5 | vários | Navegantes (4), Pouso Redondo (1); cobertura ainda parcial |
 | 17/11/2026 | Integração PCI | PR/SC/SP, busca cargo médico | 53 editais PCI únicos | 12 novos registros de cargo/jornada com fonte oficial | 12 | 9 leads médicos gerais na fila PCI | 26 registros no total; candidatos_pci.json contém filas separadas por situação. Fonte PCI não é comprovação de elegibilidade nem leitura do edital. |
+| 19/11/2026 08h Brasília | PCI + editais oficiais | PR/SC/SP; Diário Oficial Palmital, Talent Coronel Freitas, HC Ibirama, SC Treinamentos Bom Retiro, Fênix Santa Terezinha | 56 resultados nas 3 buscas PCI atuais (4 PR, 27 SC, 25 SP); 62 IDs no histórico acumulado | 4 editais oficiais, 7 registros de cargo/jornada | 7 | 9 candidatos PCI em verificação | dados.json 33 cargos; Santa Terezinha suspensa na Fênix; Palmital inicia inscrições 25/11; commits 81e1dd94, 622625e9. Cobertura parcial, sem auditoria integral de todos os municípios. |
 
 ## Regras do registro
 1. O estado deste documento é **uma síntese**, não substitui ler edital ou `dados.json`.
@@ -55,3 +56,8 @@
 - A lista de vagas verificadas em `dados.json` foi ampliada com **12 registros médicos** de Araranguá, Curitibanos, São Carlos, Agronômica, Guarujá do Sul, Fraiburgo, Mogi Guaçu e Corumbataí. Há campos “Consultar edital” onde remuneração/requisitos específicos ainda não estavam disponíveis nas páginas oficiais consultadas; não são valores inventados.
 - A divergência de data de Umuarama está explicitamente descrita na base, com referência à banca Instituto Unicampo (02/12) e aviso da Prefeitura (30/11), até resolução oficial documentada.
 - **Ação restante:** continuar verificando os nove leads e ampliar buscas por sinônimos, especialidades com exigência esclarecida e cargos de nível superior compatíveis. Não afirmar cobertura total dos estados.
+
+### Observações da revisão de 19/11/2026
+- 7 registros novos publicados em 4 editais: Palmital/PR (2 médicos gerais, 2 vagas imediatas + CR cada, inscrições futuras 25/11-27/12); Coronel Freitas/SC (3 perfis médicos, CR, inscrições até 27/11); Ibirama/SC (Médico Clínico Geral, 1 + CR, até 29/11); Bom Retiro/SC (Médico, quantitativo específico ainda precisa confirmação, até 23/11).
+- Santa Terezinha do Progresso/SC: Fênix Instituto classifica Concurso 01/2026 como **Suspenso**, logo não anunciar inscrições abertas mesmo que PCI indique prazo. Fonte: https://institutofenix.selecao.net.br/informacoes/103
+- PCI é descoberta, não validação. Buscas principais tiveram 56 resultados (4 PR, 27 SC, 25 SP), mas o histórico acumulado possui 62 IDs porque conserva pistas de ciclos anteriores. A cobertura de bancas e cidades permanece parcial.
