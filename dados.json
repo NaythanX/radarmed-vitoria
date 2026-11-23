@@ -1,7 +1,7 @@
 {
   "titulo": "Radar de Concursos | Vitória",
-  "atualizado_em": "2026-11-19",
-  "observacao": "Revisão incremental em 19/11/2026: novas oportunidades Palmital/PR, Coronel Freitas/SC, Ibirama/SC e Bom Retiro/SC confirmadas em Diário Oficial ou portal de banca; inscrições de Palmital começam apenas em 25/11. Quantidades não comprovadas são tratadas conservadoramente como CR e precisam de conferência. Santa Terezinha do Progresso continua suspensa na Fênix, apesar de notícia PCI.",
+  "atualizado_em": "2026-11-23",
+  "observacao": "Pesquisa de 23/11/2026: Palmitos/SC validado pelo edital oficial. Cobertura PR/SC/SP parcial; outros candidatos PCI aguardam conferência oficial. Vagas com prazo em 23/11 devem ser tratadas como último dia, nunca como encerradas antecipadamente.",
   "vagas": [
     {
       "id": "ms-analista-pr",
@@ -1006,6 +1006,36 @@
       "area": "Medicina",
       "banca": "SC Treinamentos",
       "fonte_banca": "https://portal.sctreinamentos.selecao.site/edital/ver/801"
+    },
+    {
+      "id": "palmitos-medico-esf-40",
+      "orgao": "Prefeitura de Palmitos",
+      "cargo": "Médico ESF — 40h",
+      "cargo_completo": "Médico ESF — 40 horas",
+      "cidade": "Palmitos",
+      "uf": "SC",
+      "tipo_vinculo": "Temporário/PSS",
+      "imediatas": 0,
+      "cadastro_reserva": true,
+      "salario": 26258.84,
+      "salario_texto": "R$ 26.258,84/mês",
+      "carga": "40 h/semana",
+      "taxa": "R$ 100,00",
+      "inscricoes_ate": "2026-12-12",
+      "hora_limite": "23:59",
+      "prova": "2026-12-20",
+      "requisitos": "Graduação em Medicina e registro no CRM/SC; sem especialidade adicional exigida no quadro de vagas do edital.",
+      "beneficios": "Auxílio-alimentação R$ 350,00 para jornada de 40 horas.",
+      "duracao": "Contratação TEMPORÁRIA para atender necessidades no exercício de 2027; duração individual do contrato não especificada nos trechos verificados do edital.",
+      "prorrogacao": "Validade do PSS de 1 ano, prorrogável uma vez por igual período; isso não significa prorrogação automática do contrato individual.",
+      "dificuldade": "Média",
+      "justificativa": "Prova objetiva com conteúdo médico e legislação local; dificuldade estimada sem análise de concorrência.",
+      "url": "https://institutoselect.selecao.net.br/informacoes/12/",
+      "fonte": "Edital oficial PSS nº 001/2026, Prefeitura de Palmitos, Instituto Select, quadro de vagas item 2.1, inscrições item 3.3, auxílio-alimentação item 2.1.2; conferido 23/11/2026.",
+      "banca": "Instituto Select Brasileiro",
+      "fonte_banca": "https://institutoselect.selecao.net.br/informacoes/12/",
+      "novo": true,
+      "area": "Medicina"
     }
   ]
 }
