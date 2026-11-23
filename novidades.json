@@ -1,20 +1,14 @@
 {
-  "atualizado_em": "2026-11-19",
-  "comparado_com": "2026-11-17",
+  "atualizado_em": "2026-11-23",
+  "comparado_com": "2026-11-19",
   "novos": [
-    "bom-retiro-medico",
-    "coronel-freitas-20",
-    "coronel-freitas-40",
-    "coronel-freitas-familia",
-    "ibirama-clinico",
-    "palmital-clinico-20",
-    "palmital-clinico-40"
+    "palmitos-medico-esf-40"
   ],
   "retificados": [],
   "retirados": [],
-  "total_publicado": 33,
+  "total_publicado": 34,
   "resumo": {
-    "novos": 7,
+    "novos": 1,
     "retificados": 0,
     "retirados": 0
   }
