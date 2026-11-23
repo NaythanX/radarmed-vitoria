@@ -1,7 +1,7 @@
 {
-  "atualizado_em": "2026-11-19",
+  "atualizado_em": "2026-11-23",
   "origem": "PCI Concursos — plugin conectado ao ChatGPT",
-  "aviso": "Pesquisa PCI atualizada em 19/11/2026. Somente registros de dados.json foram validados em edital/banca. Santa Terezinha do Progresso (296113) consta suspensa na banca Fênix; não considerar inscrições abertas.",
+  "aviso": "Pesquisa PCI 23/11/2026. Resultados são pistas; somente dados.json contém vagas com edital oficial validado. Pesquisa parcial, resultados anteriores preservados.",
   "meta": {
     "por_busca": [
       {
@@ -10,18 +10,18 @@
       },
       {
         "uf": "SC",
-        "resultados": 27
+        "resultados": 33
       },
       {
         "uf": "SP",
-        "resultados": 25
+        "resultados": 27
       }
     ],
-    "editais_unicos_encontrados": 62,
-    "pendentes_genericos": 9,
-    "ja_publicados_no_radar": 17,
+    "editais_unicos_encontrados": 67,
+    "pendentes_genericos": 13,
+    "ja_publicados_no_radar": 18,
     "especialidade_ou_incompatibilidade": 29,
-    "editais_atuais_nas_tres_buscas": 56
+    "editais_atuais_nas_tres_buscas": 64
   },
   "candidatos": [
     {
@@ -1142,6 +1142,91 @@
       "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-e-camara-de-coronel-freitas-sc-anunciam-processo-seletivo-para-diversos-cargos",
       "fonte": "PCI Concursos",
       "situacao": "publicado_na_base"
+    },
+    {
+      "pci_id": 296871,
+      "orgao": "Prefeitura de Palmitos",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO ESF"
+      ],
+      "cargos_genericos": [
+        "MÉDICO ESF"
+      ],
+      "inscricoes_inicio": null,
+      "inscricoes_ate": "2026-12-12",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-palmitos-sc-abre-processo-seletivo-com-salarios-de-ate-26258",
+      "fonte": "PCI Concursos",
+      "situacao": "publicado_na_base"
+    },
+    {
+      "pci_id": 296837,
+      "orgao": "Prefeitura de Chapadão do Lageado",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO"
+      ],
+      "cargos_genericos": [
+        "MÉDICO"
+      ],
+      "inscricoes_inicio": null,
+      "inscricoes_ate": "2026-12-23",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-chapadao-do-lageado-sc-abre-processo-seletivo-com-salarios-de-ate-21291",
+      "fonte": "PCI Concursos",
+      "situacao": "aguardando_validacao_oficial"
+    },
+    {
+      "pci_id": 296866,
+      "orgao": "Prefeitura de Itaiópolis",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO - CLÍNICA GERAL"
+      ],
+      "cargos_genericos": [
+        "MÉDICO - CLÍNICA GERAL"
+      ],
+      "inscricoes_inicio": null,
+      "inscricoes_ate": "2026-12-08",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itaiopolis-sc-abre-processo-seletivo-para-cadastro-reserva-em-diversas-areas",
+      "fonte": "PCI Concursos",
+      "situacao": "aguardando_validacao_oficial"
+    },
+    {
+      "pci_id": 296811,
+      "orgao": "Prefeitura de Major Gercino",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO"
+      ],
+      "cargos_genericos": [
+        "MÉDICO"
+      ],
+      "inscricoes_inicio": null,
+      "inscricoes_ate": "2026-12-03",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-major-gercino-sc-abre-processo-seletivo-com-salarios-de-ate-13301",
+      "fonte": "PCI Concursos",
+      "situacao": "aguardando_validacao_oficial"
+    },
+    {
+      "pci_id": 296865,
+      "orgao": "Prefeitura de Lebon Régis",
+      "uf": "SC",
+      "cargos_resumo": [
+        "MÉDICO ACT"
+      ],
+      "cargos_genericos": [
+        "MÉDICO ACT"
+      ],
+      "inscricoes_inicio": null,
+      "inscricoes_ate": "2026-12-05",
+      "inscricoes_abertas": true,
+      "link_pci": "https://www.pciconcursos.com.br/noticias/prefeitura-de-lebon-regis-sc-abre-selecoes-com-85-vagas-e-salarios-de-ate-24-4-mil",
+      "fonte": "PCI Concursos",
+      "situacao": "aguardando_validacao_oficial"
     }
   ]
 }
