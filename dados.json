@@ -1036,6 +1036,44 @@
       "fonte_banca": "https://institutoselect.selecao.net.br/informacoes/12/",
       "novo": true,
       "area": "Medicina"
+    },
+    {
+      "id": "sc-jaragua-do-sul-semsa-002-2026-medico-clinico-geral-20h",
+      "orgao": "Prefeitura de Jaraguá do Sul — SEMSA",
+      "cargo": "Médico Clínico Geral",
+      "cargo_completo": "Médico Clínico Geral — 20h",
+      "cidade": "Jaraguá do Sul",
+      "uf": "SC",
+      "tipo_vinculo": "Temporário/PSS",
+      "imediatas": 1,
+      "cadastro_reserva": true,
+      "salario": 11612.25,
+      "salario_texto": "R$ 11.612,25",
+      "carga": "20h semanais",
+      "taxa": "R$ 90,00",
+      "inscricoes_inicio": "2026-10-23",
+      "inscricoes_ate": "2026-11-12",
+      "prova": "2026-11-29",
+      "requisitos": "Medicina, registro profissional e CNH B.",
+      "beneficios": "Auxílio-refeição e serviços de saúde conforme legislação municipal.",
+      "duracao": null,
+      "prorrogacao": null,
+      "dificuldade": "Média-alta",
+      "justificativa": "Uma vaga e programa amplo de clínica médica e legislação.",
+      "url": "https://portal.institutotupy.com.br/edital/ver/101",
+      "fonte": "Edital 002/2026/SEMSA, quadro 02 e anexo 02; validade do processo de dois anos, não equivale à duração do contrato.",
+      "novo": true,
+      "area": "Medicina",
+      "banca": "Instituto Tupy",
+      "fonte_banca": "https://portal.institutotupy.com.br/edital/ver/101",
+      "conteudo_programatico_verificado": [
+        "SUS e atenção primária",
+        "Ética médica",
+        "Infecções",
+        "Doenças cardiovasculares, pulmonares, renais e endócrinas",
+        "Português, matemática e legislação municipal"
+      ],
+      "fonte_conteudo_programatico": "https://portal.institutotupy.com.br/edital/ver/101"
     }
   ]
 }
