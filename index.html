@@ -39,7 +39,7 @@
 @media(max-width:760px){.topbar-right .horizon-portal{padding:7px 9px;font-size:11px}}
 .radar-sync-action{display:inline-flex;margin:7px 0 23px;text-decoration:none}
 #dialog-calendar-exam[hidden]{display:none!important}
-</style>
+.tag.exam-tag{background:#fff1d9;color:#8b5714}.tag.future-tag{background:#eaf2ff;color:#315c9b}#dialog-calendar[hidden]{display:none!important}#exam-cards .op-card{border-left:3px solid #d6a14b}</style>
 <style id="pci-pendentes-estilos">
 .pci-section{margin-top:38px;padding:25px 0 4px;border-top:1px solid #dfe9e2}
 .pci-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:20px}
@@ -222,7 +222,7 @@ main{max-width:1480px;margin:auto;padding:24px clamp(18px,3vw,44px) 0}
       </header>
       <main id="main">
         <section class="hero" id="hero">
-          <div class="hero-copy"><div class="eyebrow"><span class="tiny-line"></span> ENCONTRE SUA PRÓXIMA OPORTUNIDADE</div><h1>Seu próximo passo<br><em>começa aqui.</em></h1><p>Concursos e processos seletivos selecionados para quem tem graduação em Medicina. Sem cargos incompatíveis, sem perder prazos.</p><div class="hero-buttons"><button class="btn primary-btn" type="button" id="go-vacancies">Explorar oportunidades <span>↗</span></button><button class="btn outline-btn" type="button" id="go-calendar">Ver próximos prazos <span>→</span></button></div></div>
+          <div class="hero-copy"><div class="eyebrow"><span class="tiny-line"></span> ENCONTRE SUA PRÓXIMA OPORTUNIDADE</div><h1>Seu próximo passo<br><em>começa aqui.</em></h1><p>Concursos e processos seletivos selecionados para quem tem graduação em Medicina. Acompanhe inscrições abertas, próximas oportunidades e provas de concursos já inscritos.</p><div class="hero-buttons"><button class="btn primary-btn" type="button" id="go-vacancies">Explorar oportunidades <span>↗</span></button><button class="btn outline-btn" type="button" id="go-calendar">Ver próximos prazos <span>→</span></button></div></div>
           <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orb orb-a"></div><div class="orb orb-b"></div><svg class="art-cross" viewBox="0 0 220 220" fill="none"><rect x="91" y="18" width="38" height="184" rx="19" fill="#D1FFF0"/><rect x="18" y="91" width="184" height="38" rx="19" fill="#D1FFF0"/><path d="M47 113h32l12-21 16 42 13-25h53" stroke="#175D54" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="floating-note"><span class="floating-icon">✦</span><span>Oportunidades<br><b>verificadas</b></span></div></div>
         </section>
 
@@ -233,7 +233,7 @@ main{max-width:1480px;margin:auto;padding:24px clamp(18px,3vw,44px) 0}
               <p class="radar-ranking-note">Ordem automática: cargo médico, vaga imediata e prazo de inscrição. Localização só desempata; CR também permanece visível.</p></div>
             <button class="text-link" type="button" data-goto="opportunities">Ver todas <span>↗</span></button>
           </div>
-          <div class="cards-grid" id="featured-cards"></div>
+          <div class="cards-grid" id="featured-cards"></div><div class="split-heading"><div><div class="minor-label">PREPARAÇÃO</div><h2>Aguardando prova</h2><p class="muted">Inscrições encerradas nos últimos 60 dias, com prova ainda por acontecer.</p></div></div><div class="cards-grid" id="exam-cards"></div>
           <div class="section-top radar-overview-stats-heading"><div><div class="minor-label">RESUMO DO RADAR</div><h2>Panorama atual</h2></div><span class="muted" id="summary-date">Situação em 17/11/2026</span></div>
           <div class="stats" id="stats"></div>
           <section class="changes-panel" id="radarmed-changes" aria-label="Atualizações da base de concursos" hidden></section>
@@ -246,7 +246,7 @@ main{max-width:1480px;margin:auto;padding:24px clamp(18px,3vw,44px) 0}
         <section id="opportunities-section" class="view-section hidden">
           <div class="section-top"><div><div class="minor-label">EDITAIS SELECIONADOS</div><h2>Todas as oportunidades</h2></div><button class="btn secondary-btn" type="button" id="download-csv">↓ Exportar CSV</button></div>
           <div class="filters-panel"><label class="search-wrap"><span class="search-ico">⌕</span><input id="search-input" placeholder="Buscar órgão, cargo ou cidade..." autocomplete="off" aria-label="Buscar oportunidades"><kbd>BUSCAR</kbd></label>
-            <div class="filter-row"><div class="pills" id="uf-filters" role="group" aria-label="Estado"><button class="pill active" data-uf="ALL">Todos</button><button class="pill" data-uf="PR">Paraná</button><button class="pill" data-uf="SC">Santa Catarina</button><button class="pill" data-uf="SP">São Paulo</button></div><div class="filter-selectors"><select id="bond-filter" aria-label="Filtrar tipo de vínculo"><option value="ALL">Todos os vínculos</option><option value="Efetivo/estatutário">Efetivo/estatutário</option><option value="Temporário/PSS">Temporário/PSS</option><option value="Emprego público/CLT">Emprego público/CLT</option><option value="Militar temporário">Militar temporário</option></select><select id="sort-filter" aria-label="Ordenar vagas"><option value="priority">Relevância para Medicina</option><option value="deadline">Prazo mais próximo</option><option value="salary">Maior salário</option><option value="immediate">Mais vagas imediatas</option></select></div></div>
+            <div class="filter-row"><div class="pills" id="uf-filters" role="group" aria-label="Estado"><button class="pill active" data-uf="ALL">Todos</button><button class="pill" data-uf="PR">Paraná</button><button class="pill" data-uf="SC">Santa Catarina</button><button class="pill" data-uf="SP">São Paulo</button></div><div class="filter-selectors"><select id="phase-filter" aria-label="Etapa do concurso"><option value="ALL">Todas as etapas</option><option value="open">Inscrições abertas</option><option value="future">Inscrições em breve</option><option value="exam">Aguardando prova</option></select><select id="bond-filter" aria-label="Filtrar tipo de vínculo"><option value="ALL">Todos os vínculos</option><option value="Efetivo/estatutário">Efetivo/estatutário</option><option value="Temporário/PSS">Temporário/PSS</option><option value="Emprego público/CLT">Emprego público/CLT</option><option value="Militar temporário">Militar temporário</option></select><select id="sort-filter" aria-label="Ordenar vagas"><option value="priority">Relevância para Medicina</option><option value="deadline">Prazo mais próximo</option><option value="salary">Maior salário</option><option value="immediate">Mais vagas imediatas</option></select></div></div>
             <div class="filter-bottom"><label class="switch-line"><input type="checkbox" id="immediate-only"><span class="switch-ui"></span><span>Somente vagas imediatas</span></label><span id="results-label" class="muted">0 oportunidades</span></div></div>
           <div class="cards-grid" id="all-cards"></div><div class="empty-state hidden" id="empty-results"><div>⌕</div><h3>Nenhuma oportunidade encontrada</h3><p>Tente outro estado, termo ou tipo de vínculo.</p><button type="button" class="btn secondary-btn" id="clear-filters">Limpar filtros</button></div>
         </section>
@@ -285,9 +285,14 @@ main{max-width:1480px;margin:auto;padding:24px clamp(18px,3vw,44px) 0}
   try { favs = new Set(JSON.parse(localStorage.getItem('radarmed_favoritos_v1') || '[]')); } catch (_e) {}
   const saveFavs = () => {try {localStorage.setItem('radarmed_favoritos_v1',JSON.stringify([...favs]));}catch(_e){}};
   const areaRank = (v) => v.cidade === 'Curitiba' ? 0 : ({PR:1,SC:2,SP:3}[v.uf] ?? 4);
-  const isOpen = (v) => daysBetween(v.inscricoes_ate) >= 0;
+  const isOpen = (v) => !!v.inscricoes_ate && daysBetween(v.inscricoes_ate) >= 0 && (!v.inscricoes_inicio || daysBetween(v.inscricoes_inicio)<=0);
+  const isFuture = v => !!v.inscricoes_inicio && daysBetween(v.inscricoes_inicio)>0 && daysBetween(v.inscricoes_ate)>=0;
+  const isAwaiting = v => !!v.inscricoes_ate && daysBetween(v.inscricoes_ate)<0 && daysBetween(v.inscricoes_ate)>=-60 && !!v.prova && daysBetween(v.prova)>=0;
+  const isActive = v => isOpen(v)||isFuture(v)||isAwaiting(v);
   const statusText = (v) => {
     const days = daysBetween(v.inscricoes_ate);
+    if (isAwaiting(v)) return {value:daysBetween(v.prova)===0?'Prova hoje':`Prova em ${daysBetween(v.prova)} dias`,cls:'exam'};
+    if (isFuture(v)) return {value:`Abre em ${shortDate(v.inscricoes_inicio)}`,cls:'future'};
     if (days < 0) return {value:'Inscrições encerradas',cls:'closed'};
     if (days === 0) return {value:'Encerra hoje',cls:'urgent'};
     if (days <= 7) return {value:`Faltam ${days} dia${days===1?'':'s'}`,cls:'urgent'};
@@ -313,14 +318,14 @@ main{max-width:1480px;margin:auto;padding:24px clamp(18px,3vw,44px) 0}
   }
   function tag(v) {
     const days = daysBetween(v.inscricoes_ate);
-    return `${v.novo ? '<span class="tag new">✦ Novo</span>' : ''}${days>=0 && days<=7 ? '<span class="tag urgent">Prazo próximo</span>':''}<span class="tag ${v.imediatas>0?'immediate':''}">${esc(offer(v))}</span>`;
+    return `${isAwaiting(v)?'<span class="tag exam-tag">Aguardando prova · inscrições encerradas</span>':isFuture(v)?'<span class="tag future-tag">Inscrições em breve</span>':''}${v.novo ? '<span class="tag new">✦ Novo</span>' : ''}${days>=0 && days<=7 ? '<span class="tag urgent">Prazo próximo</span>':''}<span class="tag ${v.imediatas>0?'immediate':''}">${esc(offer(v))}</span>`;
   }
   function card(v) {
     const status = statusText(v);
     return `<article class="op-card" data-id="${esc(v.id)}">
       <div class="card-top"><div class="card-tags">${tag(v)}</div><button class="fav-btn ${favs.has(v.id)?'faved':''}" type="button" data-fav="${esc(v.id)}" aria-label="${favs.has(v.id)?'Remover dos salvos':'Salvar oportunidade'}" aria-pressed="${favs.has(v.id)}">${favs.has(v.id)?'★':'☆'}</button></div>
       <div><div class="op-org">${esc(v.orgao)}</div><h3>${esc(v.cargo)}</h3><div class="location">⌖ &nbsp;<strong>${esc(v.cidade)} / ${esc(v.uf)}</strong> &nbsp;·&nbsp; ${esc(v.area)}</div></div>
-      <div class="card-metrics"><div class="metric"><span class="metric-label">Remuneração</span><strong>${esc(v.salario_texto)}</strong></div><div class="metric date"><span class="metric-label">Inscrições até</span><strong class="${status.cls==='urgent'?'orange':''}">${shortDate(v.inscricoes_ate)}</strong></div></div>
+      <div class="card-metrics"><div class="metric"><span class="metric-label">Remuneração</span><strong>${esc(v.salario_texto)}</strong></div><div class="metric date"><span class="metric-label">${isAwaiting(v)?'Data da prova':'Inscrições até'}</span><strong class="${status.cls==='urgent'||isAwaiting(v)?'orange':''}">${shortDate(isAwaiting(v)?v.prova:v.inscricoes_ate)}</strong></div></div>
       <div class="card-info"><span>◷ <b>${esc(v.carga)}</b></span><span>◈ <b>${esc(v.tipo_vinculo==='Temporário/PSS'?'TEMPORÁRIA/PSS':v.tipo_vinculo)}</b></span></div>
       <div class="card-footer"><span class="small-meta">${esc(status.value)}</span><button class="card-link" type="button" data-details="${esc(v.id)}">Ver detalhes ↗</button></div>
       </article>`;
@@ -333,11 +338,13 @@ main{max-width:1480px;margin:auto;padding:24px clamp(18px,3vw,44px) 0}
     return [{name:'Oportunidades ativas',n:open.length,note:'cargos elegíveis',ico:'▤',tone:''},
       {name:'Vagas imediatas',n:immed,note:'somando todos os cargos',ico:'✦',tone:''},
       {name:'Prazos em 7 dias',n:urgent,note:'inscrições que exigem atenção',ico:'◷',tone:'amber'},
-      {name:'Novidades no painel',n:now,note:'desde o relatório anterior',ico:'↗',tone:'blue'}];
+      {name:'Aguardando prova',n:vagas.filter(isAwaiting).length,note:'inscrições encerradas · 60 dias',ico:'▦',tone:'blue'}];
   }
   function drawStats(){ $('#stats').innerHTML = metrics(state.vagas).map(m=>`<div class="stat"><div class="stat-top"><div class="stat-label">${m.name}</div><div class="stat-icon ${m.tone}">${m.ico}</div></div><div class="stat-bottom"><div><div class="stat-num">${m.n}</div><div class="stat-note">${m.note}</div></div></div></div>`).join(''); }
   function drawOverview(){
     drawStats();
+    const exams=state.vagas.filter(isAwaiting).sort((a,b)=>a.prova.localeCompare(b.prova));
+    $('#exam-cards').innerHTML=exams.map(card).join('')||'<p class="muted">Nenhuma prova pendente confirmada na base atual.</p>';
     const open = state.vagas.filter(isOpen).sort(prioritySort);
     const selected = open.slice(0,4);
     const featuredIds = new Set(selected.map(v=>v.id));
@@ -346,16 +353,16 @@ main{max-width:1480px;margin:auto;padding:24px clamp(18px,3vw,44px) 0}
     $('#upcoming-list').innerHTML = soon.length ? soon.map(v=>`<div class="deadline-item"><div class="calendar-datebox"><b>${v.inscricoes_ate.slice(8)}</b><span>${monthAbbrev(v.inscricoes_ate)}</span></div><div class="deadline-text"><strong>${esc(v.cargo)}</strong><span>${esc(v.cidade)} / ${esc(v.uf)} · ${esc(v.orgao)}</span></div><span class="deadline-label">${esc(statusText(v).value)}</span></div>`).join('') : '<p class="muted" style="line-height:1.7;margin-top:20px">Nenhuma outra inscrição encerra nos próximos 7 dias.</p>';
   }
   function filtered(){
-    return sortVagas(state.vagas.filter(v=>isOpen(v) && (state.uf==='ALL'||v.uf===state.uf) && (state.bond==='ALL'||v.tipo_vinculo===state.bond) && (!state.immediate||v.imediatas>0) && `${v.cargo} ${v.cargo_completo} ${v.orgao} ${v.cidade} ${v.uf} ${v.area}`.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(state.search.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase())));
+    return sortVagas(state.vagas.filter(v=>isActive(v) && (state.phase==='open'?isOpen(v):state.phase==='future'?isFuture(v):state.phase==='exam'?isAwaiting(v):true) && (state.uf==='ALL'||v.uf===state.uf) && (state.bond==='ALL'||v.tipo_vinculo===state.bond) && (!state.immediate||v.imediatas>0) && `${v.cargo} ${v.cargo_completo} ${v.orgao} ${v.cidade} ${v.uf} ${v.area}`.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(state.search.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase())));
   }
   function drawOpportunities(){const list=filtered();$('#results-label').textContent=`${list.length} oportunidade${list.length!==1?'s':''}`;$('#all-cards').innerHTML=list.map(card).join('');$('#empty-results').classList.toggle('hidden',!!list.length);}
   const monthAbbrev=(iso)=>({1:'JAN',2:'FEV',3:'MAR',4:'ABR',5:'MAI',6:'JUN',7:'JUL',8:'AGO',9:'SET',10:'OUT',11:'NOV',12:'DEZ'})[Number(iso.slice(5,7))] || '';
   function drawCalendar(){
     const groups = new Map();
-    state.vagas.filter(isOpen).forEach(v=>{
-      if(!groups.has(v.inscricoes_ate)) groups.set(v.inscricoes_ate,[]);
-      groups.get(v.inscricoes_ate).push({v,kind:'inscrição'});
-      if(v.prova){if(!groups.has(v.prova))groups.set(v.prova,[]);groups.get(v.prova).push({v,kind:'prova'});}
+    state.vagas.filter(isActive).forEach(v=>{
+      if(!isAwaiting(v)){if(!groups.has(v.inscricoes_ate)) groups.set(v.inscricoes_ate,[]);
+      groups.get(v.inscricoes_ate).push({v,kind:'inscrição'});}
+      if(v.prova && daysBetween(v.prova)>=0){if(!groups.has(v.prova))groups.set(v.prova,[]);groups.get(v.prova).push({v,kind:'prova'});}
     });
     const html=[...groups].sort(([a],[b])=>a.localeCompare(b)).map(([date,entries])=>`<div class="timeline-group"><div class="timeline-day">${date.slice(8,10)} ${monthAbbrev(date)}<span>${date.slice(0,4)}</span></div><div class="timeline-items">${entries.sort((a,b)=>a.kind.localeCompare(b.kind)).map(({v,kind})=>`<div class="timeline-row ${kind==='prova'?'exam':''}"><div><strong>${kind==='prova'?'Prova objetiva':'Fim das inscrições'} · ${esc(v.cargo)}</strong><small>${esc(v.orgao)} · ${esc(v.cidade)} / ${esc(v.uf)}</small></div><button type="button" data-details="${esc(v.id)}">Detalhes ↗</button></div>`).join('')}</div></div>`).join('');
     $('#timeline').innerHTML = html || '<p class="muted">Nenhuma data futura na base atual.</p>';
@@ -394,10 +401,11 @@ main{max-width:1480px;margin:auto;padding:24px clamp(18px,3vw,44px) 0}
     $('#dialog-title').textContent=v.cargo_completo || v.cargo;
     $('#dialog-subtitle').textContent=`${v.orgao} · ${v.cidade} / ${v.uf}`;
     const dias=daysBetween(v.inscricoes_ate);
-    const situacao=dias<0?'Prazo de inscrição encerrado':dias<=7?'Atenção: inscrição termina nos próximos 7 dias':'Inscrições abertas';
+    const situacao=isAwaiting(v)?'Inscrições encerradas — aguardando prova':isFuture(v)?'Inscrições em breve':dias<0?'Prazo de inscrição encerrado':dias<=7?'Atenção: inscrição termina nos próximos 7 dias':'Inscrições abertas';
     $('#dialog-body').innerHTML=`<div class="dialog-lead"><div class="lead-tile"><small>Remuneração</small><strong>${esc(v.salario_texto)}</strong></div><div class="lead-tile"><small>Oferta</small><strong>${esc(offer(v))}</strong></div><div class="lead-tile"><small>Inscrições</small><strong>${fmtDate(v.inscricoes_ate)}</strong></div></div>
     <div class="dialog-grid">${dialogRow('Tipo de vínculo',v.tipo_vinculo==='Temporário/PSS'?'TEMPORÁRIA/PSS':v.tipo_vinculo)}${dialogRow('Jornada',v.carga)}${dialogRow('Taxa de inscrição',v.taxa)}${dialogRow('Data da prova',v.prova?fmtDate(v.prova):'A confirmar / conferir edital')}${dialogRow('Requisitos',v.requisitos,true)}${dialogRow('Benefícios conhecidos',v.beneficios,true)}${v.tipo_vinculo==='Temporário/PSS'?dialogRow('Duração do contrato TEMPORÁRIO',v.duracao)+dialogRow('Prorrogação',v.prorrogacao):''}${dialogRow('Dificuldade estimada',v.dificuldade)}${dialogRow('Motivo da estimativa',v.justificativa)}${dialogRow('Fonte e ressalvas',v.fonte,true)}</div><div class="warning-info"><b>${esc(situacao)}.</b> Esta base não é atualizada em tempo real. Verifique o edital e as retificações antes de se inscrever.</div>`;
     $('#dialog-calendar').href=googleCalendarUrl(v);
+    $('#dialog-calendar').hidden=daysBetween(v.inscricoes_ate)<0;
     $('#dialog-calendar-exam').hidden=!v.prova;
     $('#dialog-calendar-exam').href=googleCalendarUrl(v,'exam');
     $('#dialog-study').href='https://osce-vitoria-piloto.onrender.com/preparacao.html?concurso='+encodeURIComponent(id);
@@ -437,11 +445,12 @@ main{max-width:1480px;margin:auto;padding:24px clamp(18px,3vw,44px) 0}
     $('#close-dialog').addEventListener('click',()=>$('#detail-dialog').close());
     $('#dialog-save').addEventListener('click',()=>state.detail&&toggleFav(state.detail));
     $('#search-input').addEventListener('input',e=>{state.search=e.target.value;drawOpportunities();});
+    $('#phase-filter').addEventListener('change',e=>{state.phase=e.target.value;drawOpportunities();});
     $('#bond-filter').addEventListener('change',e=>{state.bond=e.target.value;drawOpportunities();});
     $('#sort-filter').addEventListener('change',e=>{state.sort=e.target.value;drawOpportunities();});
     $('#immediate-only').addEventListener('change',e=>{state.immediate=e.target.checked;drawOpportunities();});
     $('#download-csv').addEventListener('click',downloadCSV);
-    $('#clear-filters').addEventListener('click',()=>{state.uf='ALL';state.search='';state.bond='ALL';state.immediate=false;state.sort='priority';$('#search-input').value='';$('#bond-filter').value='ALL';$('#sort-filter').value='priority';$('#immediate-only').checked=false;$$('[data-uf]').forEach(p=>p.classList.toggle('active',p.dataset.uf==='ALL'));drawOpportunities();});
+    $('#clear-filters').addEventListener('click',()=>{state.phase='ALL';$('#phase-filter').value='ALL';state.uf='ALL';state.search='';state.bond='ALL';state.immediate=false;state.sort='priority';$('#search-input').value='';$('#bond-filter').value='ALL';$('#sort-filter').value='priority';$('#immediate-only').checked=false;$$('[data-uf]').forEach(p=>p.classList.toggle('active',p.dataset.uf==='ALL'));drawOpportunities();});
     ['detail-dialog','help-dialog'].forEach(id=>{$('#'+id).addEventListener('click',e=>{if(e.target.id===id)e.target.close();});});
   }
   async function init(){
@@ -452,7 +461,7 @@ main{max-width:1480px;margin:auto;padding:24px clamp(18px,3vw,44px) 0}
     const updated=fmtDate(dataset.atualizado_em);
     ['#data-updated-top','#data-updated-footer','#help-date-value'].forEach(sel=>$(sel).textContent=updated);
     $('#summary-date').textContent=`Situação da base em ${updated}`;
-    $('#nav-count').textContent=state.vagas.filter(isOpen).length;
+    $('#nav-count').textContent=state.vagas.filter(isActive).length;
     drawOverview();drawFavorites();attach();window.dispatchEvent(new Event("radarmed:ready"));
     if(location.protocol==='file:')console.info('Modo arquivo local: exibindo dados incorporados. Quando hospedado, dados.json será carregado automaticamente.');
   }
